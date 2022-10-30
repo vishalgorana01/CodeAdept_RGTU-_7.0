@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html{
+    overflow-x: hidden;
+    background-attachment: fixed;
+}
+
+
+#section-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    max-width: 1560px;
+    margin: 0px auto;
+    margin-top: 50px;
+    /* border: 2px solid black; */
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.container-2{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 100%;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.team_heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.container-2 .executive_members{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.container-2 .core_team_members{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.container-2 .asper_team_members{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+/* .card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 370px;
+    width: 230px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 25px 25px;
+}
+
+.upper{
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+}
+
+.upper img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.show{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    color: black;
+    z-index: 0;
+}
+
+.show h4{
+    margin-bottom: 4px;
+}
+
+.show p{
+    font-size: 14px;
+    color: gray;
+}
+
+
+.lower{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: #58D500;
+    color: white;
+    transform: translateX(-100%);
+}
+
+.lower h4{
+    margin-bottom: 4px;
+}
+
+.lower p{
+    font-size: 14px;
+}
+
+.low_opacity{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(200%);
+}
+
+.on_hover{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.on_hover span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 4px 5px;
+    opacity: 0;
+}
+
+.on_hover span i{
+    color: white;
+    z-index: 1;
+}
+
+.on_hover span:hover{
+    cursor: pointer;
+    background-color: #59d500b5;
+    color: white 100%;
+} */
+
+
+
+
+
+/* ****************************************************************************************************************** */
+
+.card{
+    position: relative;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 270px;
+    width: 300px;
+    overflow: hidden;
+    transition: height 2s,
+}
+
+.card:hover{
+    height: 400px;
+}
+
+.card .upper{
+    position: absolute;
+    top: -40px;
+    background-color: #C5D7E5 !important;
+    height: 50%;
+    width: 152%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50% ;
+    transform: translateY(-100%);
+}
+
+.card .profile_photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../Images/user4.jpg") no-repeat center;
+    background-size: cover;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.card .card_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+.card .card_content h4{
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card .card_content p{
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+}
+
+.lower{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    background-color: #287ab9;
+    width: 100%;
+    transform: translateY(200%);
+}
+
+.lower ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.lower ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.lower ul li:hover{
+    cursor: pointer;
+}
+
+.lower ul li a{
+    color: white;
+    font-size: 18px;
+    margin: 1px 15px;
+}
+

@@ -1,0 +1,252 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+#section-5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin: 0px auto;
+    height: auto;
+    background-color: #091015;
+}
+
+.container-5{
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1.3fr;
+    width: 90%;
+    height: 90%;
+    border-top: 4px solid #287ab9;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    max-width: 1404px;
+}
+
+/* .container-5 div{
+    border: 2px solid wheat;
+    height: 100%;
+    width: 100%;
+    color: white;
+} */
+
+.container-5 .one{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 20px 20px 20px;
+}
+
+.container-5 .one h4{
+    font-size: 20px;
+    color: white;;
+}
+
+.container-5 .one hr{
+    width: 40px;
+    margin: 8px 0px 25px 0px;
+    border: 2px solid #287ab9;
+}
+
+.container-5 .one p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 18px;
+    color: #ffffffb8;
+}
+
+.container-5 .one div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.container-5 .one div span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #287ab9;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin: 3px 8px;
+}
+
+.container-5 .one div span:hover{
+    cursor: pointer;
+}
+
+.container-5 .one div span a{
+    color: #ffffffb5;;
+}
+
+
+.container-5 .two{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 20px 20px 20px;
+    /* border: 2px solid wheat; */
+}
+
+.container-5 .two h4{
+    font-size: 20px;
+    color: white;;
+}
+
+.container-5 .two hr{
+    width: 50px;
+    margin: 8px 0px 25px 0px;
+    border: 2px solid #287ab9;
+}
+
+.container-5 .two div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-5 .two div span{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    color: #ffffffb8;
+    font-size: 14px;
+    margin: 5px 0px;
+}
+
+.container-5 .two div span i{
+    margin-right: 10px;
+}
+
+
+.container-5 .three{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 20px 20px 20px;
+    /* border: 2px solid wheat; */
+}
+
+.container-5 .three h4{
+    font-size: 20px;
+    color: white;;
+}
+
+.container-5 .three hr{
+    width: 50px;
+    margin: 8px 0px 25px 0px;
+    border: 2px solid #287ab9;
+}
+
+.container-5 .three div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-5 .three div ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 4px;
+}
+
+.container-5 .three div ul li{
+    margin: 6px 0px;
+    list-style: none;
+}
+
+.container-5 .three div ul li i{
+    color: #ffffffb8;
+    margin-right: 5px;
+    display: none;
+}
+
+.container-5 .three div ul li a{
+    color: #ffffffb8;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.container-5 .four{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px 20px 20px 20px;
+    /* border: 2px solid wheat; */
+}
+
+.container-5 .four h4{
+    font-size: 20px;
+    color: white;;
+}
+
+.container-5 .four hr{
+    width: 50px;
+    margin: 8px 0px 25px 0px;
+    border: 2px solid #287ab9;
+}
+
+.container-5 .four div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.container-5 .four div span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+}
+
+.container-5 .four div span img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1100px) {
+    .container-5{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-5{
+        grid-template-columns: 1fr;
+    }
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100vw;
+    background-color: #091015;
+}
+
+footer div{
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    max-width: 1404px;
+    color: white;;
+    font-size: 12px;
+}

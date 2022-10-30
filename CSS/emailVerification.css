@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+#section-2_emailVerification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    /* border: 2px solid black; */
+    /* margin: 0px auto; */
+    background: url(../Images/CBg.png) no-repeat center;
+    background-size: cover;
+}
+
+#section-2_emailVerification .container-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: auto;
+    background-color: white;
+    border-radius: 2px;
+    flex-direction: column;
+    padding: 40px 20px;
+    max-width: 1000px;
+}
+
+#section-2_emailVerification .container-2 img {
+    height: 200px;
+    width: 200px;
+}
+
+#section-2_emailVerification .container-2 form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 80%;
+    height: auto;
+}
+
+#section-2_emailVerification .container-2 form input{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+#section-2_emailVerification .container-2 form  button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    border-radius: 2px;
+    height: 35px;
+    margin-top: 30px;
+}
+
+#section-2_emailVerification .container-2 form button:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+
+@media (max-width: 992px){
+    #section-2_emailVerification .container-2{
+        width: 75%;
+    }
+}
+
+@media (max-width: 800px){
+    #section-2_emailVerification .container-2{
+        width: 85%;
+    }
+}
+
+@media (max-width: 700px){
+    #section-2_emailVerification .container-2{
+        width: 90%;
+    }
+}
+
+@media (max-width: 700px){
+    #section-2_emailVerification .container-2{
+        width: 90%;
+    }
+
+    #section-2_emailVerification form input{
+        width: 70% !important;
+    }
+
+    #section-2_emailVerification form button{
+        width: 50% !important;
+    }
+}
+
+@media (max-width: 600px){
+    #section-2_emailVerification .container-2{
+        width: 90%;
+    }
+
+    #section-2_emailVerification form input{
+        width: 80% !important;
+    }
+
+    #section-2_emailVerification form button{
+        width: 60% !important;
+    }
+}
+
+@media (max-width: 450px){
+    #section-2_emailVerification .container-2{
+        width: 90%;
+    }
+
+    #section-2_emailVerification form input{
+        width: 95% !important;
+    }
+
+    #section-2_emailVerification form button{
+        width: 80% !important;
+    }
+}
