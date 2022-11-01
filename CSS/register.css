@@ -4,14 +4,39 @@ body, html{
 
 #register_section-2{
     position: relative;
-    margin-top: 100px;
-    background: none;
+    padding-top: 100px;
+    background: url("../Images/CBg.png")no-repeat center;
+    background-size: cover;
+}
+
+.general_information{
+    background: rgb(11 20 30) !important;
+    backdrop-filter: blur( 4px ) !important;
+    background-color: rgb(11 20 30)  !important;
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.form-outline .form-control.form-control-lg~.form-label {
+    padding-top: .7rem;
+    color: white !important;
 }
 
 .contact_details{
     background-color: #091015 !important;
 }
 
+.register_btn{
+    border: 2px solid white !important;
+    background: none !important;
+    color: white !important;
+    box-shadow: none !important;
+}
+
+.register_btn:hover{
+    border: 2px solid #091015 !important;
+    background: white !important;
+    color: #091015 !important;
+}
 
 @media (min-width: 1025px) {
     .h-custom {

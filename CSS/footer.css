@@ -42,13 +42,10 @@
 
 .container-5 .one h4{
     font-size: 20px;
-    color: white;;
-}
-
-.container-5 .one hr{
-    width: 40px;
-    margin: 8px 0px 25px 0px;
-    border: 2px solid #287ab9;
+    color: white;
+    border-bottom: 2px solid #287ab9;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
 }
 
 .container-5 .one p{
@@ -96,13 +93,10 @@
 
 .container-5 .two h4{
     font-size: 20px;
-    color: white;;
-}
-
-.container-5 .two hr{
-    width: 50px;
-    margin: 8px 0px 25px 0px;
-    border: 2px solid #287ab9;
+    color: white;
+    border-bottom: 2px solid #287ab9;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
 }
 
 .container-5 .two div{
@@ -139,13 +133,10 @@
 
 .container-5 .three h4{
     font-size: 20px;
-    color: white;;
-}
-
-.container-5 .three hr{
-    width: 50px;
-    margin: 8px 0px 25px 0px;
-    border: 2px solid #287ab9;
+    color: white;
+    border-bottom: 2px solid #287ab9;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
 }
 
 .container-5 .three div{
@@ -185,16 +176,59 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    padding: 40px 20px 20px 20px;
-    /* border: 2px solid wheat; */
+    padding: 40px 0px 20px 10px;
 }
 
 .container-5 .four h4{
     font-size: 20px;
-    color: white;;
+    color: white;
+    border-bottom: 2px solid #287ab9;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
 }
 
-.container-5 .four hr{
+.container-5 .four div{
+    display: flex;
+    flex-direction: column;
+    padding-right: 10px;
+    color: #ffffffb8;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.container-5 .four div form{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    height: 32px;
+}
+
+.container-5 .four div form input{
+    border: none;
+    background-color: #ffffff1a;
+    outline: none;
+    height: 100%;
+    color: #ffffffb5;
+    padding-left: 10px;
+}
+
+.container-5 .four div form i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: orange;
+    color: white;
+    width: 40px;
+    font-size: 18px;
+}
+
+.container-5 .four div form i:hover{
+    cursor: pointer;
+}
+
+/* .container-5 .four hr{
     width: 50px;
     margin: 8px 0px 25px 0px;
     border: 2px solid #287ab9;
@@ -218,7 +252,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+} */
 
 @media (max-width: 1100px) {
     .container-5{
