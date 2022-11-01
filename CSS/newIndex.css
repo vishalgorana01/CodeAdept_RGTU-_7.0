@@ -22,16 +22,8 @@ body::-webkit-scrollbar {
     width: 0;
   }
 
-.scroll-container{
-    height:auto;
-    scroll-snap-type: y mandatory;
-    display: flex;
-    flex-direction :column ;
-    overflow-y: scroll;
-}
-.scroll-item{
-    scroll-snap-align: center;
-}
+
+
 
 
 
