@@ -210,10 +210,14 @@ body, html{
     height: 270px;
     width: 300px;
     overflow: hidden;
-    transition: height 2s,
+    transition: height 0.2s linear;
+    background: none;
+    border: 0px !important;
+    border-radius: 0px !important;
 }
 
 .card:hover{
+    transition: height 0.2s linear;
     height: 400px;
 }
 
@@ -278,6 +282,8 @@ body, html{
     justify-content: center;
     height: 100%;
     width: 100%;
+    padding-left: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .lower ul li{

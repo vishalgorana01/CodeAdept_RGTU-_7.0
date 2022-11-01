@@ -8,15 +8,15 @@
     --primary-font:'Lato', sans-serif;
     --tagline-font:'Fira Code', monospace;
 }
-body{
 
+html{
+  overflow-x: hidden;
+}
+
+body{
+  overflow-x: hidden;
     font-family: var(--primary-font);
-    
-    
     /* background: #000; */
-    
- 
-   
 }
 body::-webkit-scrollbar {
     width: 0;
@@ -48,7 +48,8 @@ body::-webkit-scrollbar {
   }
   
   .img-holder{
-    z-index: 5;
+    margin-top: 70px !important; 
+    z-index: 1;
     animation: floating 3s infinite ease-in-out;
   }
   .landingText{
@@ -77,9 +78,9 @@ body::-webkit-scrollbar {
   
 
   /*type writer*/
-  #text {
+  /* #text {
     
-  }
+  } */
   
   #text:after {
     position: relative;

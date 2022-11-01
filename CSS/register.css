@@ -5,8 +5,16 @@ body, html{
 #register_section-2{
     position: relative;
     padding-top: 100px;
-    background: url("../Images/CBg.png")no-repeat center;
+    background: url("../Images/img2.jpg")no-repeat center;
     background-size: cover;
+    background-color: rgba(0 0 0/0.69);
+    background-blend-mode: darken;
+}
+
+.card{
+    background: none !important;
+    border-radius: 0% !important;
+    border: 0px !important;
 }
 
 .general_information{

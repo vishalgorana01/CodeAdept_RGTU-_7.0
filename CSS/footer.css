@@ -238,6 +238,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding-left: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .container-5 .four ul li{
