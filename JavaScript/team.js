@@ -104,3 +104,52 @@ for(let i=0; i<card.length; i++){
         card[i].children[3].style.transform = "translateY(200%)";
     })
 }
+
+
+// let card_2 = document.querySelectorAll(".card-2");
+
+// card_2[0].addEventListener("mouseover", function(){
+//     card_2[0].children[1].style.transition = "all 1s";
+//     card_2[0].children[1].style.transform = "rotateZ(162deg)";
+//     card_2[0].children[1].children[0].style.transition = "all 1s";
+//     card_2[0].children[1].children[0].style.opacity = "1";
+
+//     card_2[0].children[2].style.transition = "all 1s";
+//     card_2[0].children[2].style.transform = "rotateZ(130deg)";
+//     card_2[0].children[2].children[0].style.transition = "all 1s";
+//     card_2[0].children[2].children[0].style.opacity = "1";
+
+//     card_2[0].children[3].style.transition = "all 1s";
+//     card_2[0].children[3].style.transform = "rotateZ(-162deg)";
+//     card_2[0].children[3].children[0].style.transition = "all 1s";
+//     card_2[0].children[3].children[0].style.opacity = "1";
+
+//     card_2[0].children[4].style.transition = "all 1s";
+//     card_2[0].children[4].style.transform = "rotateZ(-130deg)";
+//     card_2[0].children[4].children[0].style.transition = "all 1s";
+//     card_2[0].children[4].children[0].style.opacity = "1";
+
+// })
+
+// card_2[0].addEventListener("mouseleave", function(){
+//     card_2[0].children[1].style.transition = "all 1s";
+//     card_2[0].children[1].style.transform = "rotateZ(0)";
+//     card_2[0].children[1].children[0].style.transition = "all 1s";
+//     card_2[0].children[1].children[0].style.opacity = "0";
+
+//     card_2[0].children[2].style.transition = "all 1s";
+//     card_2[0].children[2].style.transform = "rotateZ(0)";
+//     card_2[0].children[2].children[0].style.transition = "all 1s";
+//     card_2[0].children[2].children[0].style.opacity = "0";
+
+//     card_2[0].children[3].style.transition = "all 1s";
+//     card_2[0].children[3].style.transform = "rotateZ(0)";
+//     card_2[0].children[3].children[0].style.transition = "all 1s";
+//     card_2[0].children[3].children[0].style.opacity = "0";
+
+//     card_2[0].children[4].style.transition = "all 1s";
+//     card_2[0].children[4].style.transform = "rotateZ(0)";
+//     card_2[0].children[4].children[0].style.transition = "all 1s";
+//     card_2[0].children[4].children[0].style.opacity = "0";
+
+// })

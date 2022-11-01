@@ -15,143 +15,400 @@ const firebaseConfig = {
 
 export const app = initializeApp(firebaseConfig);
 
-// import { getDatabase, ref, child, push, update } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js";
+import { getDatabase, ref, child, push, update, set, get } from "https://www.gstatic.com/firebasejs/9.12.1/firebase-database.js";
 
-// // Initialize Realtime Database and get a reference to the service
-// const database = getDatabase(app);
+// Initialize Realtime Database and get a reference to the service
+const database = getDatabase(app);
 
-// function writeUserData(firstName, lastName, emailId, enrollmentNo, branch, University_College, contactNo, previousSkills){
-//     const db = getDatabase();
+// function writeUserData(firstName, lastName, emailId, enrollmentNo, branch, University_College, contactNo, previousSkills) {
+//     // const db = getDatabase();
 
-//     // A post entry.
+//     // // A post entry.
 //     const registerUsersData = {
-//         firstName: firstName,
-//         // uid: uid,
-//         lastName: lastName,
-//         emailId: emailId,
-//         enrollmentNo: enrollmentNo,
-//         branch: branch,
-//         University_College: University_College,
-//         contactNo: contactNo,
-//         previousSkills: previousSkills
+
 //     };
 
-//     // Get a key for a new Post.
-//     const newPostKey = push(child(ref(db), 'registerUsers')).key;
-//     // console.log(newPostKey);
+//     // // Get a key for a new Post.
+//     // const newPostKey = push(child(ref(db), 'registerUsers')).key;
+//     // // console.log(newPostKey);
 
-//     // Write the new post's data simultaneously in the posts list and the user's post list.
-//     const updates = {};
-//     updates['/registerUsers/' + newPostKey] = registerUsersData;
-//     // updates['/registerUsers/' + newPostKey + '/'] = registerUsersData;
+//     // // Write the new post's data simultaneously in the posts list and the user's post list.
+//     // const updates = {};
+//     // updates['/registerUsers/' + newPostKey] = registerUsersData;
+//     // // updates['/registerUsers/' + newPostKey + '/'] = registerUsersData;
 
-//     return update(ref(db), updates);
+//     // return update(ref(db), updates);
+
+
 // }
 
-// let submit_btn = document.getElementById("submit_btn");
-// submit_btn.addEventListener("click", function () {
-//     let firstName = document.querySelector("#firstName").children[0].value;
-//     console.log(firstName);
+function writeUserData(firstName, lastName, emailId, enrollmentNo, branch, University_College, contactNo, previousSkills) {
+    const db = getDatabase();
+    const postListRef = ref(db, 'registeredUsers');
+    const newPostRef = push(postListRef);
+    set(newPostRef, {
+        firstName: firstName,
+        lastName: lastName,
+        emailId: emailId,
+        enrollmentNo: enrollmentNo,
+        branch: branch,
+        University_College: University_College,
+        contactNo: contactNo,
+        previousSkills: previousSkills
+    });
+}
 
-//     let lastName = document.getElementById("lastName").children[0].value;
-//     console.log(lastName);
+var check9 = true;
+function getData() {
+    const dbRef = ref(getDatabase());
+    get(child(dbRef, `registeredUsers/`)).then((snapshot) => {
+        if (snapshot.exists()) {
+            for (let i in snapshot.val()) {
+                get(child(dbRef, `registeredUsers/${i}`)).then((ans) => {
+                    let currentEmailId = document.getElementById("emailId").children[0].value;
+                    if (currentEmailId == ans.val().emailId) {
+                        alert("This email is already registered");
+                        check9 = false;
+                        // return false;
+                    }
+                })
+            }
+        } else {
+            console.log("No data available");
+        }
+    }).catch((error) => {
+        console.log(error);
+    });
+}
 
-//     let emailId = document.getElementById("emailId").children[0].value;
-//     console.log(emailId);
-
-//     let enrollmentNo = document.getElementById("enrollmentNo").children[0].value;
-//     console.log(enrollmentNo);
-
-//     let branch = document.getElementById("branch").children[0].value;
-//     console.log(branch);
-
-//     let University_College = document.getElementById("University_College").children[0].value;
-//     console.log(University_College);
-
-//     let contactNo = document.getElementById("contactNo").children[0].value;
-//     console.log(contactNo);
-
-//     let previousSkills = document.getElementById("previousSkills").children[0].value;
-//     console.log(previousSkills);
-
-//     writeUserData(firstName, lastName, emailId, enrollmentNo, branch, University_College, contactNo, previousSkills);
-
-// })
-
-// const db = getDatabase();
-// set(ref(db, 'users/' + userId), {
-//   username: name,
-//   email: email,
-//   profile_picture : imageUrl
-// })
-// .then(() => {
-//   // Data saved successfully!
-// })
-// .catch((error) => {
-//   // The write failed...
-// });
-
-// import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
-
-function signUp() {
-
-    let email = document.querySelector(".inputdiv input").value;
-    let password = "codeadept6.0";
-    const auth = getAuth();
-    createUserWithEmailAndPassword(auth, email, password)
-        .then((userCredential) => {
-            // Signed in 
-            const user = userCredential.user;
-            alert("successfully signup")
-            // ...
-        })
+function sendEmail() {
+    let emailId = document.getElementById("emailId").children[0].value;
+    console.log(emailId);
+    console.log("run");
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "abcxyz51423@gmail.com",
+        Password: "8DF40FCD1BB5390530BD797BF7C5C1BBEBD3",
+        To: `${emailId}`,
+        From: "abcxyz51423@gmail.com",
+        Subject: "CodeAdept 6.0 Registration",
+        Body: "Your are successfully registered for CodeAdept 6.0 !",
+    }).then(
+        message => alert(message)
+    )
         .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            // ..
-            alert(error);
-        });
+            console.log(error);
+        })
 }
 
+let submit_btn = document.getElementById("submit_btn");
+submit_btn.addEventListener("click", function () {
+    check9 = true;
+    getData();
 
-function signin(email, password){
-    const auth = getAuth();
-signInWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
-    // Signed in 
-    const user = userCredential.user;
-    // ...
-  })
-  .catch((error) => {
-    const errorCode = error.code;
-    const errorMessage = error.message;
-  });
-}
+    let firstName = document.querySelector("#firstName").children[0].value;
+    console.log(firstName);
 
+    let check1 = false;
 
+    if (firstName == '') {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #firstName::after{
+           content: "*required field";
+           color: red;
+           font-size: 12px;
+           position: absolute;
+           left: 12px;
+           top: 45px;
+          }
+         </style>
+      `);
+    }
+    else {
+        check1 = true;
+    }
 
-let submitBtn = document.querySelector(".inputdiv button");
+    document.getElementById("firstName").addEventListener("click", () => {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #firstName::after{
+           content: "";
+          }
+         </style>
+      `);
+    })
 
-submitBtn.addEventListener("click", function () {
+    let lastName = document.getElementById("lastName").children[0].value;
+    console.log(lastName);
 
-    signUp();
+    let check2 = false;
 
-    // document.location.href = "register.html";
+    if (lastName == '') {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #lastName::after{
+           content: "*required field";
+           color: red;
+           font-size: 12px;
+           position: absolute;
+           left: 12px;
+           top: 45px;
+          }
+         </style>
+      `);
+    }
+    else {
+        check2 = true;
+    }
+
+    document.getElementById("lastName").addEventListener("click", () => {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #lastName::after{
+           content: "";
+          }
+         </style>
+      `);
+    })
+
+    let emailId = document.getElementById("emailId").children[0].value;
+    console.log(emailId);
+
+    let check3 = false;
+
+    if (emailId == '') {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #emailId::after{
+           content: "*required field";
+           color: red;
+           font-size: 12px;
+           position: absolute;
+           left: 12px;
+           top: 45px;
+          }
+         </style>
+      `);
+    }
+    else if (!emailId.includes("@gmail.com")) {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #emailId::after{
+           content: "*invalid email ID";
+           color: red;
+           font-size: 12px;
+           position: absolute;
+           left: 12px;
+           top: 45px;
+          }
+         </style>
+      `);
+    }
+    else {
+        check3 = true;
+    }
+
+    document.getElementById("emailId").addEventListener("click", () => {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #emailId::after{
+           content: "";
+          }
+         </style>
+      `);
+    })
+
+    let enrollmentNo = document.getElementById("enrollmentNo").children[0].value;
+    console.log(enrollmentNo);
+
+    let check4 = false;
+
+    if (enrollmentNo == '') {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #enrollmentNo::after{
+           content: "*required field";
+           color: red;
+           font-size: 12px;
+           position: absolute;
+           left: 12px;
+           top: 45px;
+          }
+         </style>
+      `);
+    }
+    else {
+        check4 = true;
+    }
+
+    document.getElementById("enrollmentNo").addEventListener("click", () => {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #enrollmentNo::after{
+           content: "";
+          }
+         </style>
+      `);
+    })
+
+    let branch = document.getElementById("branch").children[0].value;
+    console.log(branch);
+
+    let check5 = false;
+
+    if (branch == '') {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #branch::after{
+           content: "*required field";
+           color: red;
+           font-size: 12px;
+           position: absolute;
+           left: 12px;
+           top: 45px;
+          }
+         </style>
+      `);
+    }
+    else {
+        check5 = true;
+    }
+
+    document.getElementById("branch").addEventListener("click", () => {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #branch::after{
+           content: "";
+          }
+         </style>
+      `);
+    })
+
+    let University_College = document.getElementById("University_College").children[0].value;
+    console.log(University_College);
+
+    let check6 = false;
+
+    if (University_College == '') {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #University_College::after{
+           content: "*required field";
+           color: red;
+           font-size: 12px;
+           position: absolute;
+           left: 12px;
+           top: 45px;
+          }
+         </style>
+      `);
+    }
+    else {
+        check6 = true;
+    }
+
+    document.getElementById("University_College").addEventListener("click", () => {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #University_College::after{
+           content: "";
+          }
+         </style>
+      `);
+    })
+
+    let contactNo = document.getElementById("contactNo").children[0].value;
+    console.log(contactNo);
+
+    let check7 = false;
+
+    if (contactNo == '') {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #contactNo::after{
+           content: "*required field";
+           color: red;
+           font-size: 12px;
+           position: absolute;
+           left: 12px;
+           top: 45px;
+          }
+         </style>
+      `);
+    }
+    else if (contactNo.length != 10) {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #contactNo::after{
+             content : "*invalid phoneNo";
+          }
+        </style>
+        `);
+    }
+    else {
+        check7 = true;
+    }
+
+    document.getElementById("contactNo").addEventListener("click", () => {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #contactNo::after{
+           content: "";
+          }
+         </style>
+      `);
+    })
+
+    let previousSkills = document.getElementById("previousSkills").children[0].value;
+    console.log(previousSkills);
+
+    let check8 = false;
+
+    if (previousSkills == '') {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #previousSkills::after{
+           content: "*required field";
+           color: red;
+           font-size: 12px;
+           position: absolute;
+           left: 12px;
+           top: 45px;
+          }
+         </style>
+      `);
+    }
+    else {
+        check8 = true;
+    }
+
+    document.getElementById("previousSkills").addEventListener("click", () => {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #previousSkills::after{
+           content: "";
+          }
+         </style>
+      `);
+    })
+
+    // getData();
     setTimeout(() => {
-        verification();
+        if (check1 == true && check2 == true && check3 == true && check4 == true && check5 == true && check6 == true && check7 == true && check8 == true && check9 == true) {
+            writeUserData(firstName, lastName, emailId, enrollmentNo, branch, University_College, contactNo, previousSkills);
+            sendEmail();
+            // alert("Form Submitted");
+        }
+        else {
+                alert("Not Submitted");
+        }
     }, 2000);
+
+    // getData();
+    // sendData();
+    // sendEmail();
 })
 
-async function verification() {
-    const auth = await getAuth();
-    console.log(auth.currentUser);
-    sendEmailVerification(auth.currentUser)
-        .then(() => {
-            // Email verification sent!
-            // ...
-            alert("email verification sent")
-        })
-        .catch((error)=>{
-            alert(error);
-        });
-}
+
+

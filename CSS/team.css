@@ -19,9 +19,12 @@ body, html{
     max-width: 1560px;
     margin: 0px auto;
     margin-top: 50px;
-    /* border: 2px solid black; */
     height: auto;
     margin-bottom: 40px;
+    /* background: url("../Images/7971.jpg") no-repeat center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.677);
+    background-blend-mode: darken; */
 }
 
 .container-2{
@@ -295,3 +298,129 @@ body, html{
     margin: 1px 15px;
 }
 
+/* .card-2{
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+.card-2 div{
+    position: absolute;
+}
+
+.card-2 .profile{
+    background: url("../Images/user4.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card-2 .facebook{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card-2 .facebook a{
+    position: absolute;
+    bottom: -60px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    justify-content: center;
+    background-color: #287ab9;
+    transform: rotateZ(195deg);
+}
+
+.card-2 .facebook a i{
+    color: black;
+}
+
+
+.card-2 .instagram{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card-2 .instagram a{
+    position: absolute;
+    bottom: -60px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    justify-content: center;
+    background-color: #287ab9;
+    transform: rotateZ(233deg);
+}
+
+.card-2 .instagram a i{
+    color: black;
+}
+
+
+.card-2 .email{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card-2 .email a{
+    position: absolute;
+    bottom: -60px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    justify-content: center;
+    background-color: #287ab9;
+    transform: rotateZ(167deg);
+}
+
+.card-2 .email a i{
+    color: black;
+}
+
+
+.card-2 .linkedin{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card-2 .linkedin a{
+    position: absolute;
+    bottom: -60px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    justify-content: center;
+    background-color: #287ab9;
+    transform: rotateZ(130deg);
+}
+
+.card-2 .linkedin a i{
+    color: black;
+} */
