@@ -176,9 +176,17 @@ a{
     color: #ffffffb8;
     text-decoration: none;
     font-size: 14px;
+    transition: all 0.4s;
 }
 
-.container-5 .three div ul li a::before{
+.container-5 .three div ul li a:hover{
+    font-weight: 500;
+    transition: all 0.4s;
+    transform: translateY(-3px);
+    color: #52B4FF;
+}
+
+/* .container-5 .three div ul li a::before{
     position: absolute;
     content: "";
     top: 18px;
@@ -208,7 +216,7 @@ a{
 
 .container-5 .three div ul li a:hover::after{
     transform: scaleX(1);
-}
+} */
 
 
 .container-5 .four{
@@ -253,7 +261,6 @@ a{
     color: #ffffffb8;
 }
 
-
 .container-5 .five{
     display: flex;
     flex-direction: column;
@@ -279,6 +286,22 @@ a{
 
 .container-5 .five div span{
     margin-bottom: 10px;
+    transition: all 0.4s;
+}
+
+.container-5 .five div span:hover{
+    transition: all 0.3s;
+    transform: translateY(-3px);
+}
+
+.container-5 .five div span:hover a{
+    transition: all 0.4s;
+    color: #52B4FF !important;
+}
+
+.container-5 .five div span:hover a i{
+    transition: all 0.4s;
+    color: #52B4FF !important;
 }
 
 .container-5 .five div span a{
