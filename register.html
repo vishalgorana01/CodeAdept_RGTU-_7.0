@@ -27,13 +27,9 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
 </head>
 
-<style>
-  .nav-item a::after {
-    top: 3px !important;
-  }
-
+<style>  
   .nav-item a::before {
-    top: 20px !important;
+    top: 22px !important;
   }
 
   .container-5 .three div ul li a::after{
@@ -50,7 +46,7 @@
 
   <header>
     <nav class="navbar">
-      <a href="#" class="nav-heading">CodeAdpet</a>
+      <a href="#" class="nav-heading">CodeAdept</a>
 
       <ul class="nav-menu">
         <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -133,7 +129,7 @@
 
                         <div id="enrollmentNo" class="form-outline">
                           <input type="text" id="form3Examplev2" class="form-control form-control-lg" />
-                          <label class="form-label" for="form3Examplev2">Enrollment No</label>
+                          <label class="form-label" for="form3Examplev2">Enrollment No.</label>
                         </div>
 
                       </div>
@@ -164,7 +160,7 @@
                     <div class="mb-4 pb-2">
                       <div id="emailId" class="form-outline form-white">
                         <input type="text" id="form3Examplea2" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Examplea2">your email</label>
+                        <label class="form-label" for="form3Examplea2">Your Email</label>
                       </div>
                     </div>
 
@@ -177,7 +173,8 @@
 
                     <div class="mb-4 pb-2">
                       <div class="form-outline form-white">
-                        <input type="text" id="form3Examplea6" class="form-control form-control-lg" value="India"  readonly style="background: none !important;"/>
+                        <input type="text" id="form3Examplea6" class="form-control form-control-lg" value="India"
+                          readonly style="background: none !important;" />
                         <label class="form-label" for="form3Examplea6">Country</label>
                       </div>
                     </div>
@@ -186,7 +183,8 @@
                       <div class="col-md-5 mb-4 pb-2">
 
                         <div class="form-outline form-white">
-                          <input type="text" id="form3Examplea7" class="form-control form-control-lg" value="+91" readonly style="background: none !important;"/>
+                          <input type="text" id="form3Examplea7" class="form-control form-control-lg" value="+91"
+                            readonly style="background: none !important;" />
                           <label class="form-label" for="form3Examplea7">Code +</label>
                         </div>
 
@@ -217,7 +215,7 @@
                     </div> -->
 
                     <button id="submit_btn" type="button" class="btn btn-light btn-lg register_btn"
-                      data-mdb-ripple-color="dark">Register</button>
+                      data-mdb-ripple-color="dark" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">Register</button>
 
                   </div>
                 </div>
@@ -234,10 +232,36 @@
         <button type="submit">submit</button>
       </div> -->
 
+  <!-- Modal -->
+  <!-- Button trigger modal -->
+  <!-- <button type="button" class="btn btn-primary" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+    Launch demo modal
+  </button> -->
+
+  <!-- Modal -->
+  <div class="modal top fade registration_success_modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true"
+    data-mdb-backdrop="static" data-mdb-keyboard="true">
+    <div class="modal-dialog  ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModal2Label">Modal title</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">...</div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-mdb-dismiss="modal">
+            OK
+          </button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
   <section id="section-5">
     <div class="container-5">
       <div class="one">
-        <h4>CodeAdepat</h4>
+        <h4>CodeAdept</h4>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat qui tempore ratione similique totam ipsa
           sunt vel commodi neque. Nesciunt!</p>
       </div>

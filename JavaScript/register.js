@@ -101,6 +101,9 @@ function sendEmail() {
         })
 }
 
+
+let successModal = document.querySelector(".registration_success_modal");
+
 let submit_btn = document.getElementById("submit_btn");
 submit_btn.addEventListener("click", function () {
     check9 = true;
@@ -219,15 +222,15 @@ submit_btn.addEventListener("click", function () {
       `);
     })
 
-    let enrollmentNo = document.getElementById("enrollmentNo").children[0].value;
-    console.log(enrollmentNo);
+    let semester = document.getElementById("semester").children[0].value;
+    console.log(semester);
 
     let check4 = false;
 
-    if (enrollmentNo == '') {
+    if (semester == '') {
         document.head.insertAdjacentHTML("beforeend", `
         <style>
-          #enrollmentNo::after{
+          #semester::after{
            content: "*required field";
            color: red;
            font-size: 12px;
@@ -398,10 +401,12 @@ submit_btn.addEventListener("click", function () {
         if (check1 == true && check2 == true && check3 == true && check4 == true && check5 == true && check6 == true && check7 == true && check8 == true && check9 == true) {
             writeUserData(firstName, lastName, emailId, enrollmentNo, branch, University_College, contactNo, previousSkills);
             sendEmail();
+            successModal.style.display = "block !important";
             // alert("Form Submitted");
         }
         else {
-                alert("Not Submitted");
+            successModal.style.display = "none !imortant";
+            alert("Not Submitted");
         }
     }, 2000);
 

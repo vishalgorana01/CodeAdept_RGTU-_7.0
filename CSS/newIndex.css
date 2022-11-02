@@ -16,16 +16,12 @@ html{
 body{
   overflow-x: hidden;
     font-family: var(--primary-font);
-    /* background: #000; */
+    scroll-behavior: smooth;
 }
+
 body::-webkit-scrollbar {
     width: 0;
   }
-
-
-
-
-
 
 /*Navbar*/
 

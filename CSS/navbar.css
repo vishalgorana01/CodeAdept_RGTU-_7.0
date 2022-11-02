@@ -39,7 +39,7 @@ header .nav-menu li a:hover::before{
     transform: scaleX(1);
 }
 
-header .nav-menu li a::after{
+/* header .nav-menu li a::after{
     position: absolute;
     content: "";
     top: 3px;
@@ -54,7 +54,7 @@ header .nav-menu li a::after{
 
 header .nav-menu li a:hover::after{
     transform: scaleX(1);
-}
+} */
 
 .logo {
     width: 150px;

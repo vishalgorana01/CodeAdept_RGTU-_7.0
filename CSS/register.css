@@ -1,5 +1,6 @@
 body, html{
     overflow-x: hidden;
+    padding-right: 0px !important;
 }
 
 #register_section-2{
@@ -116,4 +117,12 @@ body, html{
         align-items: center;
         justify-content: center;
         height: 30px;
+    }
+
+    .modal-backdrop{
+        position: relative !important;
+    }
+
+    .registration_success_modal{
+        display: none !important;
     }

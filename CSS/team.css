@@ -74,7 +74,7 @@ body, html{
     gap: 50px;
 }
 
-/* .card{
+.card{
     position: relative;
     display: flex;
     flex-direction: column;
@@ -85,6 +85,8 @@ body, html{
     object-fit: cover;
     overflow: hidden;
     margin: 25px 25px;
+    border: none;
+    border-radius: 0px;
 }
 
 .upper{
@@ -100,7 +102,7 @@ body, html{
 .upper img{
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .show{
@@ -117,12 +119,14 @@ body, html{
 }
 
 .show h4{
+    font-size: 18px !important;
     margin-bottom: 4px;
 }
 
 .show p{
-    font-size: 14px;
+    font-size: 13px !important;
     color: gray;
+    margin-bottom: 0px;
 }
 
 
@@ -135,17 +139,19 @@ body, html{
     align-items: center;
     justify-content: center;
     height: 70px;
-    background-color: #58D500;
+    background-color: #287ab9;
     color: white;
     transform: translateX(-100%);
 }
 
 .lower h4{
+    font-size: 18px !important;
     margin-bottom: 4px;
 }
 
-.lower p{
-    font-size: 14px;
+.lower h6{
+    margin-bottom: 0px !important;
+    font-size: 13px !important;
 }
 
 .low_opacity{
@@ -181,18 +187,23 @@ body, html{
     border-radius: 50%;
     margin: 4px 5px;
     opacity: 0;
+    z-index: 4;
 }
 
 .on_hover span i{
     color: white;
-    z-index: 1;
+    z-index: 5;
 }
 
 .on_hover span:hover{
     cursor: pointer;
-    background-color: #59d500b5;
+    background-color: #287ab9;
     color: white 100%;
-} */
+}
+
+.on_hover span i:hover{
+    color: white;
+}
 
 
 
@@ -200,24 +211,24 @@ body, html{
 
 /* ****************************************************************************************************************** */
 
-.card{
+/* .card{
     position: relative;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 270px;
+    height: auto;
     width: 300px;
     overflow: hidden;
-    transition: height 0.2s linear;
+    transition: height 0.4s linear ;
     background: none;
     border: 0px !important;
     border-radius: 0px !important;
 }
 
 .card:hover{
-    transition: height 0.2s linear;
+    transition: height 0.4s linear ;
     height: 400px;
 }
 
@@ -302,7 +313,7 @@ body, html{
     color: white;
     font-size: 18px;
     margin: 1px 15px;
-}
+} */
 
 /* .card-2{
     position: relative;
