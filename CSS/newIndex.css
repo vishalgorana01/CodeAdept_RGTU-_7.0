@@ -71,6 +71,12 @@ body::-webkit-scrollbar {
       
     }
   }
+
+  @media(max-width:700px){
+    .aboutContent{
+      text-align: justify !important;
+    }
+  }
   .tagline{
     max-width: 800px;
     color: rgba(255, 255, 255, 0.788);
@@ -149,7 +155,14 @@ body::-webkit-scrollbar {
 -webkit-box-shadow: 0px 9px 11px -4px rgba(0, 0, 0, 0.587) inset;
 -moz-box-shadow: 0px 9px 11px -4px rgba(0, 0, 0, 0.587) inset;
 }
+@media(max-width:770px){
+  .count{
+    font-size: 2rem !important;
+  }
+}
+.count{
 
+}
 
 /*gallery*/
 /*gallerySection*/
