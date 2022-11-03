@@ -27,12 +27,12 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css" rel="stylesheet" />
 </head>
 
-<style>  
+<style>
   .nav-item a::before {
     top: 22px !important;
   }
 
-  .container-5 .three div ul li a::after{
+  .container-5 .three div ul li a::after {
     top: 2px !important;
   }
 </style>
@@ -83,7 +83,7 @@
               <div class="row g-0">
                 <div class="col-lg-6 general_inforamtion general_information">
                   <div class="p-5">
-                    <h3 class="fw-normal mb-5" style="color: #4f7cc5;">General Infomation</h3>
+                    <h3 class="fw-normal mb-5" style="color: #4f7cc5;">Register Yourself</h3>
 
 
                     <div class="row">
@@ -91,7 +91,7 @@
 
                         <div id="firstName" class="form-outline">
                           <input type="text" id="form3Examplev2" class="form-control form-control-lg" />
-                          <label class="form-label" for="form3Examplev2">First name</label>
+                          <label class="form-label" for="form3Examplev2">First Name</label>
                         </div>
 
                       </div>
@@ -99,7 +99,7 @@
 
                         <div id="lastName" class="form-outline">
                           <input type="text" id="form3Examplev3" class="form-control form-control-lg" />
-                          <label class="form-label" for="form3Examplev3">Last name</label>
+                          <label class="form-label" for="form3Examplev3">Last Name</label>
                         </div>
 
                       </div>
@@ -108,17 +108,49 @@
                     <div class="row">
                       <div class="col-md-6 mb-4 pb-2">
 
-                        <div id="branch" class="form-outline">
-                          <input type="text" id="form3Examplev2" class="form-control form-control-lg" />
-                          <label class="form-label" for="form3Examplev2">Branch</label>
+                        <div id="branch">
+                          <!-- <input type="text" id="form3Examplev2" class="form-control form-control-lg" /> -->
+                          <!-- <label class="form-label" for="form3Examplev2">Branch</label> -->
+                          <select class="form-select form-select-md form-control form-control-lg"
+                            aria-label=".form-select-sm example"
+                            style="background-color: #0b141e !important; color: white !important;">
+
+                            <option style="background-color: #0b141e !important;" selected>Select Branch</option>
+                            <option style="background-color: #0b141e !important;" value="Inforamtion Technology">Inforamtion
+                              Technology</option>
+                            <option style="background: #0b141e !important;" value="Computer Science">Computer Science
+                            </option>
+                            <option style="background-color: #0b141e !important;" value="Electronics Communication">
+                              Electronics Communication</option>
+                            <option style="background-color: #0b141e !important;" value="Electrical Engineering">Electrical
+                              Engineering</option>
+                            <option style="background-color: #0b141e !important;" value="Mechanical Engineering">Mechanical
+                              Engineering</option>
+                            <option style="background-color: #0b141e !important;" value="Automobile">Automobile</option>
+                            <option style="background-color: #0b141e !important;" value="Others">Others</option>
+                          </select>
                         </div>
+
+
 
                       </div>
                       <div class="col-md-6 mb-4 pb-2">
 
-                        <div id="year_of_admission" class="form-outline">
-                          <input type="text" id="form3Examplev3" class="form-control form-control-lg" />
-                          <label class="form-label" for="form3Examplev3">Year of admiision</label>
+                        <div id="year_of_graduation" >
+                          <!-- <input type="text" id="form3Examplev3" class="form-control form-control-lg" />
+                          <label class="form-label" for="form3Examplev3">Year of admiision</label> -->
+
+                          <select class="form-select form-select-md form-control form-control-lg"
+                            aria-label=".form-select-sm example"
+                            style="background-color: #0b141e !important; color: white !important;">
+
+                            <option style="background-color: #0b141e !important;" selected>Select Graduation Year</option>
+                            <option style="background-color: #0b141e !important;" value="2022">2022</option>
+                            <option style="background-color: #0b141e !important;" value="2023">2023</option>
+                            <option style="background-color: #0b141e !important;" value="2024">2024</option>
+                            <option style="background-color: #0b141e !important;" value="2025">2025</option>
+                            <option style="background-color: #0b141e !important;" value="2026">2026</option>
+                          </select>
                         </div>
 
                       </div>
@@ -155,7 +187,7 @@
                 </div>
                 <div class="col-lg-6 text-white contact_details">
                   <div class="p-5">
-                    <h3 class="fw-normal mb-5">Contact Details</h3>
+                    <h3 class="fw-normal mb-5">&nbsp;</h3>
 
                     <div class="mb-4 pb-2">
                       <div id="emailId" class="form-outline form-white">
@@ -202,7 +234,7 @@
                     <div class="mb-4">
                       <div class="form-outline form-white">
                         <input type="text" id="form3Examplea9" class="form-control form-control-lg" />
-                        <label class="form-label" for="form3Examplea9">address</label>
+                        <label class="form-label" for="form3Examplea9">Address</label>
                       </div>
                     </div>
 
@@ -215,7 +247,8 @@
                     </div> -->
 
                     <button id="submit_btn" type="button" class="btn btn-light btn-lg register_btn"
-                      data-mdb-ripple-color="dark" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">Register</button>
+                      data-mdb-ripple-color="dark" data-mdb-toggle="modal"
+                      data-mdb-target="#exampleModal2">Register</button>
 
                   </div>
                 </div>
@@ -239,8 +272,8 @@
   </button> -->
 
   <!-- Modal -->
-  <div class="modal top fade registration_success_modal" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModal2Label" aria-hidden="true"
-    data-mdb-backdrop="static" data-mdb-keyboard="true">
+  <div class="modal top fade registration_success_modal" id="exampleModal2" tabindex="-1"
+    aria-labelledby="exampleModal2Label" aria-hidden="true" data-mdb-backdrop="static" data-mdb-keyboard="true">
     <div class="modal-dialog  ">
       <div class="modal-content">
         <div class="modal-header">
@@ -316,6 +349,8 @@
   <footer>
     <div>copyright | codeadept 6.0 | 2022</div>
   </footer>
+
+  <div class="mouse_trailer"></div>
 
 </body>
 

@@ -245,10 +245,10 @@ submit_btn.addEventListener("click", function () {
         check4 = true;
     }
 
-    document.getElementById("enrollmentNo").addEventListener("click", () => {
+    document.getElementById("semester").addEventListener("click", () => {
         document.head.insertAdjacentHTML("beforeend", `
         <style>
-          #enrollmentNo::after{
+          #semester::after{
            content: "";
           }
          </style>
@@ -260,11 +260,15 @@ submit_btn.addEventListener("click", function () {
 
     let check5 = false;
 
-    if (branch == '') {
+    if (branch == 'Select Branch') {
         document.head.insertAdjacentHTML("beforeend", `
         <style>
+          #branch{
+            position: relative;
+          }
+
           #branch::after{
-           content: "*required field";
+           content: "*Branch is not selected";
            color: red;
            font-size: 12px;
            position: absolute;
@@ -279,6 +283,41 @@ submit_btn.addEventListener("click", function () {
     }
 
     document.getElementById("branch").addEventListener("click", () => {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #branch::after{
+           content: "";
+          }
+         </style>
+      `);
+    })
+
+    let graduationYear = document.getElementById("year_of_graduation").children[0].value;
+    console.log(branch);
+
+    if (graduationYear == 'Select Graduation Year') {
+        document.head.insertAdjacentHTML("beforeend", `
+        <style>
+          #year_of_graduation{
+            position: relative;
+          }
+
+          #year_of_graduation::after{
+           content: "*Graduation year is not selected";
+           color: red;
+           font-size: 12px;
+           position: absolute;
+           left: 12px;
+           top: 45px;
+          }
+         </style>
+      `);
+    }
+    else {
+        check5 = true;
+    }
+
+    document.getElementById("year_of_graduation").addEventListener("click", () => {
         document.head.insertAdjacentHTML("beforeend", `
         <style>
           #branch::after{

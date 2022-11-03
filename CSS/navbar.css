@@ -2,9 +2,9 @@
 header {
     /* background-color: #262626; */
     /* background-color: rgba(11, 32, 70, 0.541);*/
-    background-color: rgba(11, 32, 70, 0.15);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
+    background-color: rgb(3 11 24);
+    /* backdrop-filter: blur(3.5px); */
+    /* -webkit-backdrop-filter: blur(3.5px); */
     position: fixed;
     width: 100%;
     top: 0px;
@@ -39,6 +39,16 @@ header .nav-menu li a:hover::before{
     transform: scaleX(1);
 }
 
+header .navbar_register{
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px !important;
+    font-size: 14px;
+    width: 130px;
+}
+
 /* header .nav-menu li a::after{
     position: absolute;
     content: "";
@@ -62,7 +72,8 @@ header .nav-menu li a:hover::after{
 }
 
 .navbar {
-    height: 70px;
+    height: auto;
+    min-height: 70px !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,11 +142,15 @@ header .nav-menu li a:hover::after{
     }
 } */
 
-@media(max-width:768px) {
+@media(max-width: 850px) {
 
     /* body{
         background-color: #070d11 !important;
     } */
+
+    header .navbar_register{
+        display: none !important;
+    }
 
     .menubar {
         display: block !important;
@@ -258,4 +273,17 @@ header .nav-menu li a:hover::after{
         transform: scale(0.8);
         opacity: 0.5;
     }
+}
+
+.mouse_trailer{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    height: 15px;
+    width: 15px;
+    background-color: #287ab9;
+    border-radius: 50%;
+    transform-origin: left;
+    /* transform: translateX(100px) translateY(100px); */
 }

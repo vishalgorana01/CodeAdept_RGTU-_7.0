@@ -12,6 +12,10 @@ body, html{
     background-blend-mode: darken;
 }
 
+#branch select option{
+    padding: 20px 0px !important;
+}
+
 .card{
     background: none !important;
     border-radius: 0% !important;
