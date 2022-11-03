@@ -46,4 +46,4 @@ function typeString(string){
         
     
 }
-typeString("Code to adept")
+typeString("CODE TO ADEPT")

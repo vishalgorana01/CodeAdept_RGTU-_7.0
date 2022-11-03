@@ -3,7 +3,9 @@
     margin: 0%;
     padding: 0%;
 }
-
+a{
+    color:white ;
+}
 #section-5{
     display: flex;
     align-items: center;
@@ -109,7 +111,7 @@
     width: 100%;
 }
 
-.container-5 .two div span{
+.container-5 .two div span,.container-5 .two div a{
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -118,6 +120,7 @@
     font-size: 14px;
     margin: 5px 0px;
 }
+
 
 .container-5 .two div span i{
     margin-right: 10px;
@@ -226,7 +229,7 @@
 
 .container-5 .four h4{
     font-size: 16px;
-    color: white;
+    color: rgb(255, 255, 255);
     border-bottom: 2px solid #287ab9;
     padding-bottom: 8px;
     margin-bottom: 25px;

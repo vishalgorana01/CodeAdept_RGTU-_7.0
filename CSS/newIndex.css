@@ -12,6 +12,11 @@
 html{
   overflow-x: hidden;
 }
+a{
+  text-decoration: none;
+  /* color:inherit !important; */
+}
+
 
 body{
   overflow-x: hidden;
@@ -22,6 +27,28 @@ body{
 body::-webkit-scrollbar {
     width: 0;
   }
+ @media(max-width:500px){
+  .fs-4{
+    font-size:1.2rem !important;
+  }
+  .fs-5{
+    font-size:1rem !important;
+  }
+ }
+
+ @media(max-width:500px){
+  .res-4{
+    font-size:1.2rem !important;
+  }
+  .res-5{
+    font-size:1rem !important;
+  }
+ }
+
+ 
+
+
+
 
 /*Navbar*/
 
@@ -106,6 +133,13 @@ body::-webkit-scrollbar {
   }
 
 /*aBOUT US sECTION*/
+
+@media(max-width:500px){
+  .card-text{
+    font-size:1rem !important;
+  }
+ }
+
 .aboutSection{
     /* background: url("../Images/vision.jpeg"),rgb(11, 22, 116); */
   background-attachment: fixed;
@@ -115,10 +149,9 @@ body::-webkit-scrollbar {
   background-position: center;
   background-repeat: no-repeat;
   /* z-index: -1; */
-  box-shadow: 0px 9px 11px -4px rgba(0, 0, 0, 0.587) inset;
--webkit-box-shadow: 0px 9px 11px -4px rgba(0, 0, 0, 0.587) inset;
--moz-box-shadow: 0px 9px 11px -4px rgba(0, 0, 0, 0.587) inset;
-  
+  box-shadow: 0px 9px 11px -4px rgba(0, 0, 0, 0.587) inset !important;
+  -webkit-box-shadow: 0px 9px 11px -4px rgba(0, 0, 0, 0.587) inset !important;
+  -moz-box-shadow: 0px 9px 11px -4px rgba(0, 0, 0, 0.587) inset !important;
 }
 .aboutHeading{
     width:fit;
@@ -261,6 +294,16 @@ body::-webkit-scrollbar {
   width:fit !important;
 }
 /*collabSection*/
+.collab .circle{
+  height: 40px !important;
+  width: 40px !important;
+  color:rgba(0, 0, 0, 0.842) !important;
+  border-color: rgba(0, 0, 0, 0.285) !important;
+}
+.collab .circle:hover{
+  border-color: rgb(0, 0, 0) !important;
+
+}
 .collabSection{
      
     /* background: url('../Images/collab.jpg'); */
@@ -310,6 +353,9 @@ body::-webkit-scrollbar {
 .circle{
     padding:10px;
     border: 2px solid rgba(255, 255, 255, 0.32) ;
+    
+    transition-property: all;
+    transition-duration: 0.5s;
 }
 .circle:hover{
     border-color: rgba(255, 255, 255, 0.712);
