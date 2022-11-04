@@ -19,7 +19,7 @@ menubar.addEventListener("click", function () {
 
 });
 
-for(let i=0; i<sidebar.children[0].childElementCount; i++){
+for(let i=0; i<sidebar.children[0].childElementCount-1; i++){
     sidebar.children[0].children[i].addEventListener("mouseover", function(){
         sidebar.children[0].children[i].style.transition = "all 0.4s";
         sidebar.children[0].children[i].style.transform = "translateX(10px)";
