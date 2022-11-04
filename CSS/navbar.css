@@ -41,6 +41,9 @@ header .nav-menu li a:hover::before{
     transform: scaleX(1);
 }
 
+.nav-menu{
+    padding-right:100px;
+padding-left:0 !important}
 header .navbar_register{
     height: 44px;
     display: flex;
@@ -73,12 +76,30 @@ header .navbar_register{
     height: 150px;
 } */
 
+.floatingBtn{
+    z-index: 99;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom:0;
+    /* right: -20px; */
+    /* transform: rotate(90deg); */
+    display: none;
+    border-radius: 100000px;
+    height: 50px;
+    width: 50px;
+    right:0;
+    font-size: 0.7rem !important;
+    padding: 5px;
+    }
+
 .navbar {
     height: 60px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 0 4px;
 }
 
 .nav-menu {
@@ -148,7 +169,10 @@ header .navbar_register{
     /* body{
         background-color: #070d11 !important;
     } */
-
+    .floatingBtn{
+        display: block;
+    }
+    
     header .navbar_register{
         display: none !important;
     }
@@ -172,10 +196,13 @@ header .navbar_register{
     .nav-menu {
         display: none !important;
     }
+    
 
     .nav-item {
         margin: 16px 0;
     }
+
+
 
     .nav-menu.active {
         left: 0;
@@ -188,6 +215,9 @@ header .navbar_register{
 
     /* h1 {
         font-size: 40px !important;
+    } */
+    /* .nav-out{
+        display: none !important;
     } */
 }
 
