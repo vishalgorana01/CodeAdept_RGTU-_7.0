@@ -274,10 +274,10 @@ body::-webkit-scrollbar {
    
     font-family: var(--primary-font);
     
-    background: url('../Images/timeline.png');
-    background-color: #030029b3;
+    background: url('../Images/schedule3.jpg');
+    background-color: rgba(0, 0, 0, 0.678);
     background-size: cover;
-    background-position:bottom;
+    background-position:top;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-attachment: fixed;
