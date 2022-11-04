@@ -45,37 +45,46 @@
   </section>
 
   <header >
-    <nav class="navbar">
+    <nav class="navbar justify-content-between">
         <a href="./index.html" class="nav-heading ">
             <img src="Images/logo2.png" height="40">
             <span>
                 CodeAdept
-            </span></a>
+            </span>
+        </a>
 
-        <ul class="nav-menu" style="margin-bottom: 0px !important;">
-            <li class="nav-item"><a href="index.html" class="nav-link present">Home</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="timeline.html" class="nav-link">Schedule</a></li>
-            <li class="nav-item"><a href="team2.html" class="nav-link">Team</a></li>
-            <li class="nav-item"><a href="register.html" class="nav-link">Register</a></li>
-        </ul>
-        <div class="menubar">
+        <div class="">
+                <ul class="nav-menu m-0" style="margin-bottom: 0px !important;">
+
+                <li class="nav-item p-0 m-0"><a href="./index.html" class="nav-link ">Home</a></li>
+                <li class="nav-item p-0 m-0"><a href="./index.html#aboutSection" class="nav-link">About</a></li>
+                <li class="nav-item p-0 m-0"><a href="./timeline.html" class="nav-link">Schedule</a></li>
+                <li class="nav-item p-0 m-0"><a href="./team2.html" class="nav-link">Team</a></li>
+                <li class="nav-item p-0 m-0"><a href="./index.html#contactUS" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+        <a href="register.html"><span class="fw-medium navRegisterBtn btn btn-light me-2 ">Register Now</span></a>
+        
+            
+        <div class="menubar me-2">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </div>
     </nav>
 
+    
+
     <div class="sidebar">
-        <ul>
-            <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
-            <li><i class="fa-solid fa-user"></i><a href="about.html">About us</a></li>
-            <li><i class="fa-solid fa-user"></i><a href="team2.html">Our Team</a></li>
-            <li><i class="fa-solid fa-calendar-days"></i><a href="timeline.html">Schedule</a></li>
-            <li><i class="fa-solid fa-clipboard-list"></i></i><a href="register.html">Register</a></li>
-            <li><i class="fa-solid fa-phone"></i><a href="contact.html">Contact us</a></li>
-        </ul>
-    </div>
+      <ul>
+          <li><i class="fa-solid fa-house"></i><a href="./index.html">Home</a></li>
+          <li><i class="fa-solid fa-user"></i><a href="./index.html#aboutSection">About us</a></li>
+          <li><i class="fa-solid fa-user"></i><a href="./team2.html">Our Team</a></li>
+          <li><i class="fa-solid fa-calendar-days"></i><a href="./timeline.html">Schedule</a></li>
+          <li><i class="fa-solid fa-phone"></i><a href="./index.html#contactUS">Contact us</a></li>
+          <li><a href="./register.html"><button class="btn btn-outline-light">Register</button></a></li>
+      </ul>
+  </div>
 </header>
 
   <section id="register_section-2" class="h-100 h-custom gradient-custom-2">
@@ -120,7 +129,7 @@
                             style="background-color: #0b141e !important; color: white !important;">
 
                             <option style="background-color: #0b141e !important;" selected>Select Branch</option>
-                            <option style="background-color: #0b141e !important;" value="Inforamtion Technology">Inforamtion
+                            <option style="background-color: #0b141e !important;" value="Information Technology">Information
                               Technology</option>
                             <option style="background: #0b141e !important;" value="Computer Science">Computer Science
                             </option>
@@ -172,7 +181,7 @@
                       <div class="col-md-6 mb-4 pb-2">
 
                         <div id="semester" class="form-outline">
-                          <input type="text" id="form3Examplev3" class="form-control form-control-lg" />
+                          <input type="number" min="1" max="8" id="form3Examplev3" class="form-control form-control-lg appearance-none" />
                           <label class="form-label" for="form3Examplev3">Semester</label>
                         </div>
 
@@ -297,64 +306,68 @@
 
   <section id="section-5">
     <div class="container-5">
-      <div class="one">
-        <h4>CodeAdept</h4>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat qui tempore ratione similique totam ipsa
-          sunt vel commodi neque. Nesciunt!</p>
-      </div>
-
-
-
-      <div class="three">
-        <h4>Useful links</h4>
-        <div>
-          <ul>
-            <li><i class="fa-solid fa-arrow-right"></i><a href="index.html">Home</a></li>
-            <li><i class="fa-solid fa-arrow-right"></i><a href="about.html">About us</a></li>
-            <li><i class="fa-solid fa-arrow-right"></i><a href="contact.html">Contact us</a></li>
-          </ul>
+        <div class="one">
+            <h4>CodeAdept</h4>
+            <p>Our mission is to continuously strive to provide the best platform for this and the next
+                generation of students and to bring more such opportunities for students to test themselves.</p>
         </div>
-      </div>
 
-      <div class="two">
-        <h4>Get in Touch</h4>
-        <div>
-          <span><i class="fa-sharp fa-solid fa-location-dot"></i>DoIT UIT RGPV, Bhopal, MP</span>
-          <span><i class="fa-sharp fa-solid fa-phone"></i>+91 94798 53285</span>
-          <!-- <span><i class="fa-sharp fa-solid fa-phone"></i>+91 88171 50833</span> -->
-          <span><a href="mailto:codeadeptrgtu@gmail.com"><i
-                class="fa-sharp fa-solid fa-envelope"></i>codeadeptrgtu@gmail.com</a></span>
-        </div>
-      </div>
 
-      <div class="four">
-        <h4>Discover</h4>
-        <div>
-          <ul style="padding-left: 0px !important;">
-            <li><a>What is CodeAdept ?</a></li>
-            <li><a>Your journey to CodeAdept</a></li>
-            <li><a>The Articles</a></li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="five">
-        <h4>Folow us on</h4>
-        <div>
-          <!-- <span><a href="#"><i class="fa-brands fa-facebook-f"></i>facebook</a></span> -->
-          <!-- <span><a href="#"><i class="fa-brands fa-twitter"></i>twitter</a></span> -->
-          <span><a href="#"><i class="fa-brands fa-linkedin-in"></i>linked in</a></span>
-          <span><a href="#"><i class="fa-brands fa-instagram"></i>instagram</a></span>
+        <div class="three">
+            <h4>Useful links</h4>
+            <div>
+                <ul>
+                    <li><i class="fa-solid fa-arrow-right"></i><a href="index.html">Home</a></li>
+                    <li><i class="fa-solid fa-arrow-right"></i><a href="./index.html#aboutSection">About us</a></li>
+                    <li><i class="fa-solid fa-arrow-right"></i><a href="index.html#contactUS">Contact us</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+
+        <div class="two">
+            <h4>Get in Touch</h4>
+            <div>
+                <span><i class="fa-sharp fa-solid fa-location-dot"></i>DoIT UIT RGPV, Bhopal, MP</span>
+                <span><i class="fa-sharp fa-solid fa-phone"></i>+91 94798 53285</span>
+                <!-- <span><i class="fa-sharp fa-solid fa-phone"></i>+91 88171 50833</span> -->
+                <span><a href="mailto:codeadeptrgtu@gmail.com"><i
+                            class="fa-sharp fa-solid fa-envelope"></i>codeadeptrgtu@gmail.com</a></span>
+            </div>
+        </div>
+
+        <div class="four">
+            <h4>Discover</h4>
+            <div>
+                <ul style="padding-left: 0px !important;">
+                    <li><a>What is CodeAdept ?</a></li>
+                    <li><a>Your journey to CodeAdept</a></li>
+                    <li><a>The Articles</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="five">
+            <h4>Follow us on</h4>
+            <div>
+                <!-- <span><a href="#"><i class="fa-brands fa-facebook-f"></i>facebook</a></span> -->
+                <!-- <span><a href="#"><i class="fa-brands fa-twitter"></i>twitter</a></span> -->
+                <span><a href="https://www.linkedin.com/showcase/codeadept/"><i
+                            class="fa-brands fa-linkedin-in"></i>LinkedIn</a></span>
+                <span><a href="https://www.instagram.com/codeadept/"><i
+                            class="fa-brands fa-instagram"></i>Instagram</a></span>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <footer>
-    <div>copyright | codeadept 6.0 | 2022</div>
-  </footer>
+<footer>
+    <div>Copyright &copy; | CodeAdept 6.0 | 2022</div>
+</footer>
 
   <div class="mouse_trailer"></div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 
 </body>
 

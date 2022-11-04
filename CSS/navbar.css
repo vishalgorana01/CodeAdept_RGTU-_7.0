@@ -1,3 +1,41 @@
+:root{
+    --primary-font:'Lato', sans-serif;
+    --tagline-font:'Fira Code', monospace;
+}
+.underline{
+    height: 2px;
+    background: rgb(16, 138, 165);
+    border-radius: 10000px;
+}
+body{
+    overflow-x: hidden;
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+  }
+  
+  body::-webkit-scrollbar {
+      width: 0;
+    }
+
+
+    @media(max-width:500px){
+        .fs-4{
+          font-size:1.2rem !important;
+        }
+        .fs-5{
+          font-size:1rem !important;
+        }
+       }
+      
+       @media(max-width:500px){
+        .res-4{
+          font-size:1.2rem !important;
+        }
+        .res-5{
+          font-size:1rem !important;
+        }
+       }
+      
 /* navbar start */
 header {
     background-color: #020916;
@@ -114,7 +152,7 @@ header .navbar_register{
 
 @media(max-width: 850px) {
     .navRegisterBtn{
-        display: none;
+        display: none !important;
     }
     
     header .navbar_register{

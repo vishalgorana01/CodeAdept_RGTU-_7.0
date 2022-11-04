@@ -106,7 +106,8 @@ function sendEmail() {
         Team CodeAdept
         `,
   }).then(
-    message => alert(message)
+    message => {
+      swal("Registration Successfull!", "Don't forget to check mail( also SPAM)!", "success");}
   )
     .catch((error) => {
       console.log(error);
@@ -458,7 +459,7 @@ submit_btn.addEventListener("click", function () {
       // alert("Form Submitted");
     }
     else {
-      alert("Not Submitted");
+      swal("Error!", "Form not Submitted", "error");;
     }
   }, 2000);
 
