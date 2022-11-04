@@ -291,7 +291,8 @@ body::-webkit-scrollbar {
     width:fit;
 }
 .date{
-  width:fit !important;
+  width:fit-content !important;
+  display: inline-block;
 }
 /*collabSection*/
 .collab .circle{

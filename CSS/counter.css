@@ -1,7 +1,15 @@
 .number-counter{
-    background-color: #121317;
+    /* background-color: #121317; */
     margin: auto;
     /* padding: 20px auto; */
+    background-image: url(../Images/try2.jpg);
+    background-blend-mode: darken;
+    background-color: #030029b3;
+    background-size: cover;
+    background-position:bottom;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .wrapper{
     /* border: 1px solid white; */
