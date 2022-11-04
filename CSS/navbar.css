@@ -288,3 +288,9 @@ header .navbar_register{
     transform-origin: left;
     /* transform: translateX(100px) translateY(100px); */
 }
+
+@media (max-width: 768px) {
+    .mouse_trailer{
+        display: none;
+    }
+}
