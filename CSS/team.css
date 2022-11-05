@@ -190,6 +190,14 @@ body, html{
     z-index: 4;
 }
 
+.on_hover span a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
 .on_hover span i{
     color: white;
     z-index: 5;

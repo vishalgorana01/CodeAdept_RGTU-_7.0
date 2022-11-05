@@ -10,16 +10,16 @@ for (let i = 0; i < card.length; i++) {
         card[i].children[1].style.transform = "translateX(0%)";
 
         card[i].children[2].children[0].style.transition = "all 0.4s";
-        card[i].children[2].children[0].style.opacity = "0.5";
+        card[i].children[2].children[0].style.opacity = "1";
 
         card[i].children[2].children[1].style.transition = "all 0.4s";
-        card[i].children[2].children[1].style.opacity = "0.5";
+        card[i].children[2].children[1].style.opacity = "1";
 
         card[i].children[2].children[2].style.transition = "all 0.4s";
-        card[i].children[2].children[2].style.opacity = "0.5";
+        card[i].children[2].children[2].style.opacity = "1";
 
-        card[i].children[2].children[3].style.transition = "all 0.4s";
-        card[i].children[2].children[3].style.opacity = "0.5";
+        // card[i].children[2].children[3].style.transition = "all 0.4s";
+        // card[i].children[2].children[3].style.opacity = "1";
 
 
         card[i].children[4].style.transition = "all 0.4s";
@@ -53,8 +53,8 @@ for (let i = 0; i < card.length; i++) {
         card[i].children[2].children[2].style.transition = "all 0.4s";
         card[i].children[2].children[2].style.opacity = "0";
 
-        card[i].children[2].children[3].style.transition = "all 0.4s";
-        card[i].children[2].children[3].style.opacity = "0";
+        // card[i].children[2].children[3].style.transition = "all 0.4s";
+        // card[i].children[2].children[3].style.opacity = "0";
 
 
         card[i].children[4].style.transition = "all 0.4s";

@@ -342,14 +342,21 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   margin: 10px;
+  overflow: hidden;
   /* height: 250px; */
   /* height: 200px; */
 }
 
 #gallery .container_gallery div img {
   height: 250px;
+  transition: all 0.6s;
   /* height: 100%; */
   /* width: 100%; */
+}
+
+#gallery .container_gallery div img:hover{
+  transition: all 0.6s;
+  transform: scale(1.5, 1.5);
 }
 
 @media (max-width: 400px) {
