@@ -90,10 +90,10 @@ function sendEmail() {
   console.log("run");
   Email.send({
     Host: "smtp.elasticemail.com",
-    Username: "abcxyz51423@gmail.com",
-    Password: "8DF40FCD1BB5390530BD797BF7C5C1BBEBD3",
+    Username: "codeadeptrgtu@gmail.com",
+    Password: "60078806771758EBF8FA8DE692422EE42865",
     To: `${emailId}`,
-    From: "abcxyz51423@gmail.com",
+    From: "codeadeptrgtu@gmail.com",
     Subject: " Registration Confirmed",
     Body: `Dear ${firstName} ${lastName},
          Greetings from Team CodeAdept, \n 
