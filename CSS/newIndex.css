@@ -80,6 +80,14 @@ body::-webkit-scrollbar {
   .landingText h3 {
     display: inline;
   }
+  .landingRegBTn{
+    display: none;
+  }
+  @media(max-width:850px){
+    .landingRegBTn{
+      display: block;
+    }
+  }
 
   @keyframes floating {
     0%,

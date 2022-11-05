@@ -130,3 +130,10 @@ body, html{
     .registration_success_modal{
         display: none !important;
     }
+
+    .commingSoon{
+        background: url('../Images/img2.jpg'),rgba(0, 0, 0, 0.505);
+        background-blend-mode: darken;
+        background-size: cover;
+        background-position: center;
+    }
