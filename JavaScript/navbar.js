@@ -50,3 +50,22 @@ for(let i=0; i<sidebar.children[0].childElementCount-1; i++){
 
 // }
 
+//  prevScrollpos = window.pageYOffset
+// let landingBottom=document.querySelector(".landing-section").getBoundingClientRect().bottom;
+// document.addEventListener("scroll",()=>{
+//     if(document.documentElement.scrollTop)
+//     console.log( window.pageYOffset);
+//     console.log(document.documentElement.scrollTop);
+// })
+
+// let prevScrollpos = window.pageYOffset
+// window.onscroll = function() {
+//     let currentScrollPos = window.pageYOffset;
+//     if (prevScrollpos > currentScrollPos) {
+//       document.getElementById("navbar-head").style.visibility = "visible";
+//     } else {
+//         document.getElementById("navbar-head").style.visibility = "hidden";
+//     }
+//     prevScrollpos = currentScrollPos;
+//   }
+  

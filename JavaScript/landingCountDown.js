@@ -5,7 +5,7 @@ const sec = document.getElementById("sec");
 
 const currentYear =new Date().getFullYear();
 
-const eventDate= new Date("Novmber 25 2022 00:00:00");
+const eventDate= new Date("Novmber 26 2022 00:00:00");
 
 //update countdown
 function updateCountdowntime(){
