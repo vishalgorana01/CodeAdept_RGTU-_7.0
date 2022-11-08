@@ -47,3 +47,42 @@ function typeString(string){
     
 }
 typeString("CODE TO ADEPT")
+
+
+// 
+
+// let registerMouseTrailer = document.querySelector(".registerMouseTrailer");
+
+// let landingPg = document.querySelector(".landingPg");
+
+// landingPg.addEventListener("mouseenter", function(){
+//     registerMouseTrailer.style.display = "1";
+// })
+
+// landingPg.addEventListener("mouseleave", function(){
+//     registerMouseTrailer.style.display = "0";
+// })
+
+// window.onmousemove = evnet=>{
+//     registerMouseTrailer.style.opacity = "1";
+    
+//     let x = event.clientX;
+//     let y = event.clientY;
+//     // console.log(y);
+//     let height = window.outerHeight;
+
+//     const keyFrames = {
+//         transform: `translate(${x}px, ${y}px)`
+//     }
+
+//     registerMouseTrailer.animate(keyFrames, {
+//         duration: 800,
+//         fill: "forwards",
+//     })
+// }
+
+
+
+// registerMouseTrailer.addEventListener("click", function(){
+//     document.location.href = "register.html";
+// })

@@ -31,24 +31,24 @@ for(let i=0; i<sidebar.children[0].childElementCount-1; i++){
     });
 }
 
-let mouse_trailer = document.querySelector(".mouse_trailer");
+// let mouse_trailer = document.querySelector(".mouse_trailer");
 
-console.log(mouse_trailer);
+// console.log(mouse_trailer);
 
-window.onmousemove = evnet=>{
-    let x = event.clientX;
-    let y = event.clientY;
+// window.onmousemove = evnet=>{
+//     let x = event.clientX;
+//     let y = event.clientY;
 
-    const keyFrames = {
-        transform: `translate(${x}px, ${y}px)`
-    }
+//     const keyFrames = {
+//         transform: `translate(${x}px, ${y}px)`
+//     }
 
-    mouse_trailer.animate(keyFrames, {
-        duration: 800,
-        fill: "forwards",
-    })
+//     mouse_trailer.animate(keyFrames, {
+//         duration: 800,
+//         fill: "forwards",
+//     })
 
-}
+// }
 
 //  prevScrollpos = window.pageYOffset
 // let landingBottom=document.querySelector(".landing-section").getBoundingClientRect().bottom;

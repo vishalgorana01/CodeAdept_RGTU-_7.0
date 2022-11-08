@@ -26,16 +26,16 @@ for (let i = 0; i < card.length; i++) {
         card[i].children[4].style.transform = "translateX(0%)";
     })
 
-    for(let j=0; j<card[i].children[2].childElementCount; j++){
-        card[i].children[2].children[j].addEventListener("mouseenter", function(){
-            card[i].children[2].children[j].style.opacity = "1";
-            console.log("span")
-        })
+    // for(let j=0; j<card[i].children[2].childElementCount; j++){
+    //     card[i].children[2].children[j].addEventListener("mouseenter", function(){
+    //         card[i].children[2].children[j].style.opacity = "1";
+    //         console.log("span")
+    //     })
 
-        card[i].children[2].children[j].addEventListener("mouseleave", function(){
-            card[i].children[2].children[j].style.opacity = "0.5";
-        })
-    }
+    //     card[i].children[2].children[j].addEventListener("mouseleave", function(){
+    //         card[i].children[2].children[j].style.opacity = "0.5";
+    //     })
+    // }
 
 }
 

@@ -348,6 +348,7 @@ body{
 }
 
 #gallery .container_gallery div img {
+  transition: all 0.5s;
   height: 250px;
   transition: all 0.6s;
   /* height: 100%; */
@@ -500,3 +501,24 @@ select:-webkit-autofill:focus {
 
 
 
+
+/*  */
+.registerMouseTrailer{
+  position: fixed;
+  top: -50px;
+  left: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  font-size: 16px;
+  font-weight: bolder;
+  opacity: 1;
+}
+
+.registerMouseTrailer:hover{
+  cursor: none;
+}
