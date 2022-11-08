@@ -2,486 +2,561 @@
 <html lang="en">
 
 <head>
+       <!--Favicon-->
+       <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" card_content="IE=edge">
-    <meta name="viewport" card_content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAdept 6.0 - team page</title>
+
+    <!--BootsTrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+     
+    
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- CSS links -->
     <link rel="stylesheet" href="./CSS/navbar.css">
+    <link rel="stylesheet" href="./CSS/newIndex.css">
+    <!-- <link rel="stylesheet" href="./CSS/landing.css"> -->
     <link rel="stylesheet" href="./CSS/team.css">
     <link rel="stylesheet" href="./CSS/footer.css">
 
+    <!-- AOS CDN link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-
-    <title>Document</title>
 </head>
 
-<body onload=preloader()>
-    <!-- <section id="loader_container">
-        <div class="loader">
-            <span style="font-size: 34px !important;">{</span>Loading...<span
-                style="font-size: 34px !important;">}</span>
-        </div>
-    </section> -->
+<style>
+    .nav-item a::before {
+        top: 22px !important;
+    }
 
+    .container-5 .three div ul li a::after {
+        top: 2px !important;
+    }
+</style>
+
+<body>
+
+    <!--navbar-->
     <header>
-        <nav class="navbar">
-            <a href="#" class="nav-heading">CodeAdpet</a>
+        <nav class="navbar justify-content-between">
+            <a href="./index.html" class="nav-heading d-flex align-items-center">
+                <img src="Images/logo2.png" height="40">
+                <span>
+                    CodeAdept
+                </span>
+            </a>
 
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link present">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="timeline.html" class="nav-link">Schedule</a></li>
-                <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
-                <li class="nav-item"><a href="emailVerification.html" class="nav-link">Registration</a></li>
-            </ul>
-            <div class="menubar">
-                <span class="bar" style="background-color: #287ab9;"></span>
-                <span class="bar" style="background-color: #287ab9;"></span>
-                <span class="bar" style="background-color: #287ab9;"></span>
+            <div class="">
+                <ul class="nav-menu m-0" style="margin-bottom: 0px !important;">
+
+                    <li class="nav-item p-0 m-0"><a href="./index.html" class="nav-link ">Home</a></li>
+                    <li class="nav-item p-0 m-0"><a href="./index.html#aboutSection" class="nav-link">About</a></li>
+                    <li class="nav-item p-0 m-0"><a href="./timeline.html" class="nav-link ">Schedule</a></li>
+                    <li class="nav-item p-0 m-0"><a href="./team.html" class="nav-link present">Team</a></li>
+                    <li class="nav-item p-0 m-0"><a href="./index.html#contactus" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <a href="register.html"><span class="fw-medium navRegisterBtn btn btn-light me-2 ">Register</span></a>
+
+
+            <div class="menubar me-2">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
 
+
+
         <div class="sidebar">
             <ul>
-                <li><i class="fa-solid fa-house"></i><a href="index.html">Home</a></li>
-                <li><i class="fa-solid fa-user"></i><a href="about.html">About us</a></li>
-                <li><i class="fa-solid fa-user"></i><a href="team.html">Our Team</a></li>
-                <li><i class="fa-solid fa-calendar-days"></i><a href="timeline.html">Schedule</a></li>
-                <li><i class="fa-solid fa-clipboard-list"></i></i><a href="emailVerification.html">Register</a></li>
-                <li><i class="fa-solid fa-phone"></i><a href="contact.html">Contact us</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="./index.html">Home</a></li>
+                <li><i class="fa-solid fa-user"></i><a href="./index.html#aboutSection">About us</a></li>
+                <li><i class="fa-solid fa-user"></i><a href="./team.html">Our Team</a></li>
+                <li><i class="fa-solid fa-calendar-days"></i><a href="./timeline.html">Schedule</a></li>
+                <li><i class="fa-solid fa-phone"></i><a href="./index.html#contactus">Contact us</a></li>
+                <li><a href="./register.html"><button class="btn btn-light text-dark">Register</button></a></li>
             </ul>
         </div>
     </header>
 
-    <!-- <section id="section-2">
+    <section
+        class="scroll-item py-5 landing-section  min-vh-100  d-flex flex-column justify-content-center align-items-center">
+
+        <div class="img-holder ">
+            <img src="./Images/logo2.png" alt="logo" width="150px">
+        </div>
+        <div class="landingText text-white text-center my-5">
+            <h1 class="font-bold uppercase">
+                &nbsp; Meet Our Team &nbsp;
+            </h1>
+            <!-- <span class="fs-3 mr-3">
+        /* &nbsp;
+    </span> -->
+            <h3 class="fs-italic my-3 inline-block" id="text">
+            </h3>
+            <!-- <span class="fs-3 ml-3">
+        &nbsp; */
+    </span> -->
+
+            <h4 class=" mx-2 fs-4 tagline my-5">
+                "The team that makes it all possible."
+            </h4>
+
+            <!-- <button type="button" class="px-5 py-3 btn btn-light fw-bold">Register Now</button> -->
+        </div>
+    </section>
+
+    <section id="section-2">
         <div class="container-2">
-            <div class="team_heading">
-                <h2>Meet Our Team</h2>
-            </div> -->
 
+            <!-- Executive Members -->
+            <div class="team_heading" data-aos="fade-down">
+                <h2 class="fw-bold" style="color: #020e24;">Executive Members</h2>
+            </div>
 
-            <!-- <div class="card">
-                <div class="upper">
-                    <img src="./Images/user5.jpg" alt="">
+            <div class="executive_members">
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/SandeshJainSir.jpg" alt="Executive">
+                    </div>
+
+                    <div class="low_opacity">
+
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:sandeshjain2507@gmail.com" target="_blank"><i
+                                    class="fa-regular fa-envelope"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/thesandeshjain" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <span><a href="https://www.instagram.com/sandesh__jain_07" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></span>
+                    </div>
+                    <div class="show">
+                        <h4>Sandesh Jain</h4>
+                        <p>Executive</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Sandesh Jain</h4>
+                        <h6>Executive</h6>
+                    </div>
                 </div>
+
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/UrvashiBansalMam.jpg" alt="Co-Executive">
+                    </div>
+
+                    <div class="low_opacity">
+
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:bansalurvashi1806@gmail.com" target="_blank"><i
+                                    class="fa-regular fa-envelope" ></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/urvashi-bansal/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <!-- <span><a href=""><i class="fa-brands fa-instagram"></i></a></span> -->
+                    </div>
+                    <div class="show">
+                        <h4>Urvashi Bansal</h4>
+                        <p>Co-Executive</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Urvashi Bansal</h4>
+                        <h6>Co-Executive</h6>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Core Team Members -->
+            <div class="team_heading" data-aos="zoom-in">
+                <h2 class="fw-bold" style="color: #020e24;">Core Team</h2>
+            </div>
+
+            <div class="core_team_members">
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/VineetSingh.jpg" alt="Managing Director" >
+                    </div>
+
+                    <div class="low_opacity">
+
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:vineetksc@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/vineet-singh-chauhan-544aa6224/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <!-- <span><a href="https://instagram.com/chauhansvineet?igshid=NjZiMGI4OTY="><i
+                                    class="fa-brands fa-instagram"></i></a></span> -->
+                    </div>
+                    <div class="show">
+                        <h4>Vineet Singh Chauhan</h4>
+                        <p>Managing Director</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Vineet Singh Chauhan</h4>
+                        <h6>Managing Director</h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/VishalGorana.jpg" alt="Managing Director">
+                    </div>
+
+                    <div class="low_opacity">
+
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:vishalgorana514@gmail.com" target="_blank"><i
+                                    class="fa-regular fa-envelope"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/vishal-gorana-9a2595224" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <span><a href="https://instagram.com/vishal_gorana_04?igshid=NjZiMGI4OTY=" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></span>
+                    </div>
+                    <div class="show">
+                        <h4>Vishal Gorana</h4>
+                        <p>Managing Director</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Vishal Gorana</h4>
+                        <h6>Managing Director</h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/VinayakMalviya.jpg" alt="Technical lead">
+                    </div>
+
+                    <div class="low_opacity">
+
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:vinayakmalviya21@gmail.com " target="_blank"><i
+                                    class="fa-regular fa-envelope" ></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/vinayak-malviya-a64059224" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <span><a href="https://instagram.com/vinayakmalviya21?igshid=NjZiMGI4OTY=" target="_blank">
+                                <i class="fa-brands fa-instagram"></i></a></span>
+                    </div>
+                    <div class="show">
+                        <h4>Vinayak Malviya</h4>
+                        <p>Technical lead</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Vinayak Malviya</h4>
+                        <h6>Technical lead</h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/MuktiMarkam.jpeg" alt="Designing lead">
+                    </div>
+
+                    <div class="low_opacity">
+
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:muktimarkam82575@gmail.com" target="_blank"><i
+                                    class="fa-regular fa-envelope"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/mukti-markam-0896b41b1" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <span><a href="https://instagram.com/muktimarkam_?igshid=NjZiMGI4OTY=" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></span>
+                    </div>
+                    <div class="show">
+                        <h4>Mukti Markam</h4>
+                        <p>Designing lead</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Mukti Markam</h4>
+                        <h6>Designing lead</h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/ShubhanMishra.jpg" alt="Content lead">
+                    </div>
+
+                    <div class="low_opacity">
+
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:cy.shubham.mishra@gmail.com" target="_blank"><i
+                                    class="fa-regular fa-envelope"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/shubham-mishra-362416226" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <span><a href="https://www.instagram.com/cyberdslayer" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></span>
+                    </div>
+                    <div class="show">
+                        <h4>Shubham Mishra</h4>
+                        <p>Content lead</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Shubham Mishra</h4>
+                        <h6>Content lead</h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/RimshaKhan.jpg" alt="Marketing lead">
+                    </div>
+
+                    <div class="low_opacity">
+
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:rimsha2707@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/rimsha-khan-a45029225" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <span><a href="https://instagram.com/rimsha_.khan_?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></span>
+                    </div>
+                    <div class="show">
+                        <h4>Rimsha Khan</h4>
+                        <p>Marketing lead</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Rimsha Khan</h4>
+                        <h6>Marketing lead</h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/PratikSingh.jpg" alt="" style="background-color: red;">
+                    </div>
+
+                    <div class="low_opacity">
+
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:pratik27march@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/pratik-singh-50804a226" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <span><a href=" https://www.instagram.com/pratiksingh2671" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></span>
+                    </div>
+                    <div class="show">
+                        <h4>Pratik Singh</h4>
+                        <p>Web Developer</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Pratik Singh</h4>
+                        <h6>Web Developer</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TeamAsper Members -->
+            <div class="team_heading" data-aos="fade-up">
+                <h2 class="fw-bold" style="color: #020e24;">Asper Team</h2>
+            </div>
+
+            <div class="asper_team_members">
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/HemantUmre.jpg" alt="Technical">
+                    </div>
+
+                    <div class="low_opacity">
+
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:hemantumre12@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/hemant-umre-23b8911b0" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <span><a href="https://instagram.com/hemant_umre?igshid=YmMyMTA2M2Y" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></span>
+                    </div>
+                    <div class="show">
+                        <h4>Hemant Umre</h4>
+                        <p>Technical Department</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Hemant Umre</h4>
+                        <h6>Technical Department</h6>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/ShreyaRai.jpg" alt="Content Writer">
+                    </div>
+
+                    <div class="low_opacity">
+
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:shreyarai0308@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/shreya-rai-742952226" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <span><a href="https://www.instagram.com/shreyaa0308" target="_blank"><i
+                                    class="fa-brands fa-instagram" ></i></a></span>
+                    </div>
+                    <div class="show">
+                        <h4>Shreya Rai</h4>
+                        <p>Content Writer</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Shreya Rai</h4>
+                        <h6>Content Writer</h6>
+                    </div>
+                </div>
+
                 
-                <div class="low_opacity">
 
-                </div>
-                <div class="on_hover">
-                    <span><i class="fa-brands fa-facebook-f"></i></span>
-                    <span><i class="fa-brands fa-twitter"></i></span>
-                    <span><i class="fa-brands fa-linkedin-in"></i></span>
-                    <span><i class="fa-brands fa-instagram"></i></span>
-                </div>
-                <div class="show">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <h4>Vishal Gorana</h4>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
+                <div class="card">
+                    <div class="upper">
+                        <img src="./Images/PragyaShrivastav.jpg" alt="Graphic Designer">
+                    </div>
 
-            <div class="card">
-                <div class="upper">
-                    <img src="./Images/user5.jpg" alt="">
-                </div>
-                
-                <div class="low_opacity">
+                    <div class="low_opacity">
 
-                </div>
-                <div class="on_hover">
-                    <span><i class="fa-brands fa-facebook-f"></i></span>
-                    <span><i class="fa-brands fa-twitter"></i></span>
-                    <span><i class="fa-brands fa-linkedin-in"></i></span>
-                    <span><i class="fa-brands fa-instagram"></i></span>
-                </div>
-                <div class="show">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <h4>Vishal Gorana</h4>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper">
-                    <img src="./Images/user5.jpg" alt="">
-                </div>
-                
-                <div class="low_opacity">
-
-                </div>
-                <div class="on_hover">
-                    <span><i class="fa-brands fa-facebook-f"></i></span>
-                    <span><i class="fa-brands fa-twitter"></i></span>
-                    <span><i class="fa-brands fa-linkedin-in"></i></span>
-                    <span><i class="fa-brands fa-instagram"></i></span>
-                </div>
-                <div class="show">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <h4>Vishal Gorana</h4>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper">
-                    <img src="./Images/user5.jpg" alt="">
-                </div>
-                
-                <div class="low_opacity">
-
-                </div>
-                <div class="on_hover">
-                    <span><i class="fa-brands fa-facebook-f"></i></span>
-                    <span><i class="fa-brands fa-twitter"></i></span>
-                    <span><i class="fa-brands fa-linkedin-in"></i></span>
-                    <span><i class="fa-brands fa-instagram"></i></span>
-                </div>
-                <div class="show">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <h4>Vishal Gorana</h4>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper">
-                    <img src="./Images/user5.jpg" alt="">
-                </div>
-                
-                <div class="low_opacity">
-
-                </div>
-                <div class="on_hover">
-                    <span><i class="fa-brands fa-facebook-f"></i></span>
-                    <span><i class="fa-brands fa-twitter"></i></span>
-                    <span><i class="fa-brands fa-linkedin-in"></i></span>
-                    <span><i class="fa-brands fa-instagram"></i></span>
-                </div>
-                <div class="show">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <h4>Vishal Gorana</h4>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper">
-                    <img src="./Images/user5.jpg" alt="">
-                </div>
-                
-                <div class="low_opacity">
-
-                </div>
-                <div class="on_hover">
-                    <span><i class="fa-brands fa-facebook-f"></i></span>
-                    <span><i class="fa-brands fa-twitter"></i></span>
-                    <span><i class="fa-brands fa-linkedin-in"></i></span>
-                    <span><i class="fa-brands fa-instagram"></i></span>
-                </div>
-                <div class="show">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <h4>Vishal Gorana</h4>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper">
-                    <img src="./Images/user5.jpg" alt="">
-                </div>
-                
-                <div class="low_opacity">
-
-                </div>
-                <div class="on_hover">
-                    <span><i class="fa-brands fa-facebook-f"></i></span>
-                    <span><i class="fa-brands fa-twitter"></i></span>
-                    <span><i class="fa-brands fa-linkedin-in"></i></span>
-                    <span><i class="fa-brands fa-instagram"></i></span>
-                </div>
-                <div class="show">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <h4>Vishal Gorana</h4>
-                    <h6>Web Developer</h6>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper">
-                    <img src="./Images/user5.jpg" alt="">
-                </div>
-                
-                <div class="low_opacity">
-
-                </div>
-                <div class="on_hover">
-                    <span><i class="fa-brands fa-facebook-f"></i></span>
-                    <span><i class="fa-brands fa-twitter"></i></span>
-                    <span><i class="fa-brands fa-linkedin-in"></i></span>
-                    <span><i class="fa-brands fa-instagram"></i></span>
-                </div>
-                <div class="show">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <h4>Vishal Gorana</h4>
-                    <h6>Web Developer</h6>
-                </div>
-            </div> -->
-
-            <!-- ************************************************************************************* -->
-            <!-- Faculty coordinaters -- 3 or 4 -->
-            <!-- Executive heads --- sandesh sir or urvashi mam -->
-            <!-- Core team ---- 6 members -->
-            <!-- Asper members --- 1  -->
-
-            <!-- 
-                Faculty coordinator
-Arpit sir ,asmita mam
-Executive head
-Sandesh sir urvashi mam
-Core team
-Apan log
-
-Helping team
-Pragya
-Volunteers
-             -->
-
-
-            <!-- <div class="card">
-                <div class="upper"></div>
-                <div class="profile_photo"></div>
-                <div class="card_content">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper"></div>
-                <div class="profile_photo"></div>
-                <div class="card_content">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper"></div>
-                <div class="profile_photo"></div>
-                <div class="card_content">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper"></div>
-                <div class="profile_photo"></div>
-                <div class="card_content">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper"></div>
-                <div class="profile_photo"></div>
-                <div class="card_content">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper"></div>
-                <div class="profile_photo"></div>
-                <div class="card_content">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper"></div>
-                <div class="profile_photo"></div>
-                <div class="card_content">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="upper"></div>
-                <div class="profile_photo"></div>
-                <div class="card_content">
-                    <h4>Vishal Gorana</h4>
-                    <p>Web Developer</p>
-                </div>
-                <div class="lower">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                    </ul>
+                    </div>
+                    <div class="on_hover">
+                        <!-- <span><a></a><i class="fa-brands fa-facebook-f"></i></a></span> -->
+                        <span><a href="mailto:" target="_blank"><i class="fa-regular fa-envelope"></i></a></span>
+                        <span><a href="https://www.linkedin.com/in/pragya-shrivastava-7a220a225" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a></span>
+                        <span><a href="https://instagram.com/being_prags?igshid=YmMyMTA2M2Y=" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a></span>
+                    </div>
+                    <div class="show">
+                        <h4>Pragya Shrivastav</h4>
+                        <p>Graphic Designer</p>
+                    </div>
+                    <div class="lower">
+                        <h4>Pragya Shrivastav</h4>
+                        <h6>Graphic Designer</h6>
+                    </div>
                 </div>
             </div>
 
         </div>
-    </section> -->
+    </section>
 
     <section id="section-5">
         <div class="container-5">
             <div class="one">
-                <h4>About us</h4>
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore accusantium obcaecati accusamus
-                    deleniti eveniet dolorum quia possimus iusto similique vitae quidem tempore eius doloremque,
-                    repellat ratione eos officia impedit at!</p>
+                <h4>CodeAdept</h4>
+                <p>Our mission is to continuously strive to provide the best platform for this and the next
+                    generation of students and to bring more such opportunities for students to test themselves.</p>
+            </div>
+
+
+
+            <div class="three">
+                <h4>Useful links</h4>
                 <div>
-                    <span><a href="#"><i class="fa-brands fa-facebook-f"></i></a></span>
-                    <span><a href="#"><i class="fa-brands fa-twitter"></i></a></span>
-                    <span><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></span>
-                    <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                    <ul>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="index.html">Home</a></li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="./index.html#aboutSection">About us</a>
+                        </li>
+                        <li><i class="fa-solid fa-arrow-right"></i><a href="index.html#contactus">Contact us</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
             <div class="two">
                 <h4>Get in Touch</h4>
-                <hr>
                 <div>
                     <span><i class="fa-sharp fa-solid fa-location-dot"></i>DoIT UIT RGPV, Bhopal, MP</span>
                     <span><i class="fa-sharp fa-solid fa-phone"></i>+91 94798 53285</span>
-                    <span><i class="fa-sharp fa-solid fa-phone"></i>+91 88171 50833</span>
-                    <span><i class="fa-sharp fa-solid fa-envelope"></i>codeadeptrgtu@gmail.com</span>
-                    <span><i class="fa-regular fa-clock"></i>Round1, 11AM - 12PM</span>
-                </div>
-            </div>
-
-            <div class="three">
-                <h4>Useful links</h4>
-                <hr>
-                <div>
-                    <ul>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Home</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">About us</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Our Team</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Registration</a></li>
-                        <li><i class="fa-solid fa-arrow-right"></i><a href="#">Contact us</a></li>
-                    </ul>
+                    <!-- <span><i class="fa-sharp fa-solid fa-phone"></i>+91 88171 50833</span> -->
+                    <span class="companyEmail"><a href="mailto:codeadeptrgtu@gmail.com"><i
+                                class="fa-sharp fa-solid fa-envelope"></i>codeadeptrgtu@gmail.com</a></span>
                 </div>
             </div>
 
             <div class="four">
-                <h4>Gallery</h4>
-                <hr>
+                <h4>Discover</h4>
                 <div>
-                    <span><img src="./Images/user2.jpg" alt="error loading"></span>
-                    <span><img src="./Images/user4.jpg" alt="error loading"></span>
-                    <span><img src="./Images/user5.jpg" alt="error loading"></span>
-                    <span><img src="./Images/user6.jpg" alt="error loading"></span>
+                    <ul style="padding-left: 0px !important;">
+                        <li><a href="./index.html#aboutSection">What is CodeAdept ?</a></li>
+                        <li><a href="https://www.theasperteam.in" target="_blank">Asper</a></li>
+                        <li><a href="https://www.uitrgpv.ac.in/departments/department_home.aspx" target="_blank">DoIT</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="five">
+                <h4>Follow us on</h4>
+                <div>
+                    <!-- <span><a href="#"><i class="fa-brands fa-facebook-f"></i>facebook</a></span> -->
+                    <!-- <span><a href="#"><i class="fa-brands fa-twitter"></i>twitter</a></span> -->
+                    <span><a href="https://www.linkedin.com/showcase/codeadept/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in" ></i>LinkedIn</a></span>
+                    <span><a href="https://www.instagram.com/codeadept/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i>Instagram</a></span>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div>copyright | codeadept 6.0 | 2022</div>
+        <div>Copyright &copy; | CodeAdept 6.0 | 2022</div>
     </footer>
 
+    <div class="mouse_trailer"></div>
+
+    <!-- BootsTrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <!-- JavaScript files -->
+    <script src="./JavaScript/newIndex.js"></script>
+    <script src="./JavaScript/navbar.js"></script>
+    <script src="./JavaScript/team.js"></script>
+    <!-- <script src="./JavaScript/footer.js"></script> -->
+
+    <!-- AOS JavaScript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 120,
+            // delay: 0, 
+            duration: 1000,
+        });
+
+    </script>
 </body>
 
-<script src="./JavaScript/navbar.js"></script>
-<script src="./JavaScript/team.js"></script>
-<script src="./JavaScript/footer.js"></script>
+<script>
+    function preloader() {
+        // setTimeout(() => {
+        let loader_container = document.getElementById("loader_container");
+        loader_container.style.display = "none";
+        // }, 1000);
+    }
+</script>
 
 </html>

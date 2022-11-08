@@ -333,15 +333,7 @@
 .codingRounds{
     margin-top:100px !important;
 }
-.body { 
-    /* display: grid; 
-    justify-content: center; 
-    align-items: center; 
-    flex-wrap: wrap;  */
-    /* min-height: 100vh; */ 
-    /* background: #232427; */ 
-  } 
-   
+  
   .body .round-container { 
     display: flex; 
     justify-content: center; 
