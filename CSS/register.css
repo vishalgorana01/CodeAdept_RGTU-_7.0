@@ -137,3 +137,15 @@ body, html{
         background-size: cover;
         background-position: center;
     }
+
+    .spinnerDiv{
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 1000000000000;
+        background: rgba(0, 0, 0, 0.352);
+        backdrop-filter: blur(10px);
+    }
+    ::-webkit-inner-spin-button{
+        display: none;
+    }
