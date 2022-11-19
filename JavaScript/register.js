@@ -86,7 +86,6 @@ function getData() {
 }
 
 function sendEmail() {
-  document.querySelector(".spinnerDiv").classList.add("d-none");
 
 
   let firstName = document.querySelector("#firstName").children[0].value;
