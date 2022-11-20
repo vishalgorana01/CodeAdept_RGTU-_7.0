@@ -20,6 +20,37 @@ import { getDatabase, ref, child, push, update, set, get } from "https://www.gst
 // Initialize Realtime Database and get a reference to the service
 const database = getDatabase(app);
 
+let allRegisteredEmails = [];
+
+var check9 = true;
+// // function getData() {
+//   const dbRef = ref(getDatabase());
+//   get(child(dbRef, `registeredStudents/`)).then((snapshot) => {
+//     if (snapshot.exists()) {
+//       for (let i in snapshot.val()) {
+//         get(child(dbRef, `registeredStudents/${i}`)).then((ans) => {
+//           allRegisteredEmails.push(ans.val().emailId);
+//           let currentEmailId = document.getElementById("emailId").children[0].value;
+//           if (currentEmailId == ans.val().emailId) {
+//             // alert("This email is already registered");
+//   // document.querySelector(".spinnerDiv").classList.add("d-none");
+
+//             // swal("OOPS", "This email is already registered!", "warning");
+//             check9 = false;
+//             // return false;
+//           }
+//         })
+//       }
+//     } else {
+//       console.log("No data available");
+//     }
+//   }).catch((error) => {
+//     alert(error);
+//   });
+// // }
+
+console.log(allRegisteredEmails);
+
 // function writeUserData(firstName, lastName, emailId, enrollmentNo, branch, University_College, contactNo, previousSkills) {
 //     // const db = getDatabase();
 
@@ -59,31 +90,7 @@ function writeUserData(firstName, lastName, emailId, enrollmentNo, branch, Unive
   });
 }
 
-var check9 = true;
-function getData() {
-  const dbRef = ref(getDatabase());
-  get(child(dbRef, `registeredStudents/`)).then((snapshot) => {
-    if (snapshot.exists()) {
-      for (let i in snapshot.val()) {
-        get(child(dbRef, `registeredStudents/${i}`)).then((ans) => {
-          let currentEmailId = document.getElementById("emailId").children[0].value;
-          if (currentEmailId == ans.val().emailId) {
-            // alert("This email is already registered");
-  document.querySelector(".spinnerDiv").classList.add("d-none");
 
-            swal("OOPS", "This email is already registered!", "warning");
-            check9 = false;
-            // return false;
-          }
-        })
-      }
-    } else {
-      console.log("No data available");
-    }
-  }).catch((error) => {
-    alert(error);
-  });
-}
 
 function sendEmail() {
 
@@ -132,11 +139,11 @@ This is to inform you that you have successfully registered in CodeAdept 6.0 .</
         `,
   }).then(
     message => {
-    document.querySelector(".spinnerDiv").classList.add("d-none");
+    // document.querySelector(".spinnerDiv").classList.add("d-none");
       swal("Registration Successfull!", "Don't forget to check mail( also SPAM)!", "success");}
   )
     .catch((error) => {
-  document.querySelector(".spinnerDiv").classList.add("d-none");
+  // document.querySelector(".spinnerDiv").classList.add("d-none");
 
       console.log(error);
     })
@@ -150,7 +157,7 @@ submit_btn.addEventListener("click", function () {
   document.querySelector(".spinnerDiv").classList.remove("d-none");
 
   check9 = true;
-  getData();
+  // getData();
 
   let firstName = document.querySelector("#firstName").children[0].value;
   console.log(firstName);
@@ -223,6 +230,32 @@ submit_btn.addEventListener("click", function () {
 
   let check3 = false;
 
+  // // function getData() {
+  //   const dbRef = ref(getDatabase());
+  //   get(child(dbRef, `registeredStudents/`)).then((snapshot) => {
+  //     if (snapshot.exists()) {
+  //       for (let i in snapshot.val()) {
+  //         get(child(dbRef, `registeredStudents/${i}`)).then((ans) => {
+  //           allRegisteredEmails.push(ans.val().emailId);
+  //           let currentEmailId = document.getElementById("emailId").children[0].value;
+  //           if (currentEmailId == ans.val().emailId) {
+  //             // alert("This email is already registered");
+  //   // document.querySelector(".spinnerDiv").classList.add("d-none");
+  
+  //             // swal("OOPS", "This email is already registered!", "warning");
+  //             check9 = false;
+  //             // return false;
+  //           }
+  //         })
+  //       }
+  //     } else {
+  //       console.log("No data available");
+  //     }
+  //   }).catch((error) => {
+  //     alert(error);
+  //   });
+  // // }
+
   if (emailId == '') {
     document.head.insertAdjacentHTML("beforeend", `
         <style>
@@ -254,6 +287,14 @@ submit_btn.addEventListener("click", function () {
   else {
     check3 = true;
   }
+
+  // for(let i=0; i<allRegisteredEmails.length; i++){
+  //   if(allRegisteredEmails[i] == emailId){
+  //     swal("OOPS", "This email is already registered!", "warning");
+  //     check3 = false;
+  //     console.log(false);
+  //   }
+  // }
 
   document.getElementById("emailId").addEventListener("click", () => {
     document.head.insertAdjacentHTML("beforeend", `
@@ -483,17 +524,17 @@ submit_btn.addEventListener("click", function () {
 
   // getData();
   setTimeout(() => {
-    if (check1 == true && check2 == true && check3 == true && check4 == true && check5 == true && check6 == true && check7 == true && check8 == true && check9 == true) {
+    if (check1 == true && check2 == true && check3 == true && check4 == true && check5 == true && check6 == true && check7 == true && check8 == true) {
 
       
       writeUserData(firstName, lastName, emailId, enrollmentNo, branch, University_College, contactNo, previousSkills);
       sendEmail();
       // alert("Form Submitted");
+      document.querySelector(".spinnerDiv").classList.add("d-none");
     }
     else {
-  document.querySelector(".spinnerDiv").classList.add("d-none");
-
-      swal("Error!", "Form not Submitted", "error");;
+      document.querySelector(".spinnerDiv").classList.add("d-none");
+      // swal("Error!", "Form not Submitted", "error");
     }
   }, 200);
 
