@@ -499,10 +499,11 @@ a, a:hover {
     font-size: 1.75rem;
 }
 .postcard .postcard__img {
-    max-height: 180px;
+    /* max-height: 180px; */
     width: 100%;
     object-fit: cover;
     position: relative;
+
 }
 .postcard .postcard__img_link {
     display: contents;
