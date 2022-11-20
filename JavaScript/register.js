@@ -139,7 +139,7 @@ This is to inform you that you have successfully registered in CodeAdept 6.0 .</
         `,
   }).then(
     message => {
-    // document.querySelector(".spinnerDiv").classList.add("d-none");
+    document.querySelector(".spinnerDiv").classList.add("d-none");
       swal("Registration Successfull!", "Don't forget to check mail( also SPAM)!", "success");}
   )
     .catch((error) => {
@@ -530,7 +530,7 @@ submit_btn.addEventListener("click", function () {
       writeUserData(firstName, lastName, emailId, enrollmentNo, branch, University_College, contactNo, previousSkills);
       sendEmail();
       // alert("Form Submitted");
-      document.querySelector(".spinnerDiv").classList.add("d-none");
+      // document.querySelector(".spinnerDiv").classList.add("d-none");
     }
     else {
       document.querySelector(".spinnerDiv").classList.add("d-none");
