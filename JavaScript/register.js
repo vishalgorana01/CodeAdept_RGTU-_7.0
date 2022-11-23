@@ -97,17 +97,17 @@ function sendEmail() {
       swal("Registration Successfull !", "You will recieve mail within 2 days. Don't forget to check SPAM Folder!", "success");
 
 
-  let firstName = document.querySelector("#firstName").children[0].value;
-  let lastName = document.getElementById("lastName").children[0].value;
+  // let firstName = document.querySelector("#firstName").children[0].value;
+  // let lastName = document.getElementById("lastName").children[0].value;
 
-  let emailId = document.getElementById("emailId").children[0].value;
+  // let emailId = document.getElementById("emailId").children[0].value;
   // let emailBody = document.createElement('div');
   // emailBody.innerHTML=`
   
   // `
 
-  console.log(emailId);
-  console.log("run");
+  // console.log(emailId);
+  // console.log("run");
 //   Email.send({
 //     Host: "smtp.elasticemail.com",
 //     Username: "codeadeptrgtu@gmail.com",
