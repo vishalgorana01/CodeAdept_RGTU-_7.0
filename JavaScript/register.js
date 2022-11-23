@@ -93,8 +93,20 @@ function writeUserData(firstName, lastName, emailId, enrollmentNo, branch, Unive
 
 
 function sendEmail() {
-  document.querySelector(".spinnerDiv").classList.add("d-none");
+  let registeredPromise = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+     let  a = 7;
+      document.querySelector(".spinnerDiv").classList.add("d-none");
       swal("Registration Successfull !", "You will recieve mail within 2 days. Don't forget to check SPAM Folder!", "success");
+      resolve(7);
+
+    }, 2000);
+  })
+
+//  registeredPromise.then(()=>{
+//     console.log("direct to home page");
+//   });
+  
 
 
   // let firstName = document.querySelector("#firstName").children[0].value;
