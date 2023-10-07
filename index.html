@@ -5,12 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeAdept 6.0</title>
+    <title>CodeAdept 7.0</title>
+
+    <!-- JQuery cdn link -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <!--CSS-->
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    
+
+    <!-- particle.js script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
+    <script src="./JavaScript/Particle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
 
 
     <!-- CSS files -->
@@ -18,6 +29,11 @@
     <link rel="stylesheet" href="./CSS/timeline.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/navbar.css">
+
+    <!-- bootstrap cdn link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.1/css/font-awesome.min.css">
 
 
     <!--fontawesome-->
@@ -38,6 +54,9 @@
 
     <!--Favicon-->
     <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+
+
+
 </head>
 
 <style>
@@ -86,8 +105,6 @@
             </div>
         </nav>
 
-
-
         <div class="sidebar">
             <ul>
                 <li><i class="fa-solid fa-house"></i><a href="./index.html">Home</a></li>
@@ -95,63 +112,16 @@
                 <li><i class="fa-solid fa-user"></i><a href="./team.html">Our Team</a></li>
                 <li><i class="fa-solid fa-calendar-days"></i><a href="./timeline.html">Schedule</a></li>
                 <li><i class="fa-solid fa-phone"></i><a href="./index.html#contactus">Contact us</a></li>
-                <li><a href="./register.html"><button class="btn btn-light text-dark" >Register</button></a></li>
+                <li><a href="./register.html"><button class="btn btn-light text-dark">Register</button></a></li>
             </ul>
         </div>
     </header>
-    <!-- <span>
-        <button class="btn btn-primary floatingBtn">
-            Register
-        </button>
-    </span> -->
+
+
     <main>
+        <!-- Landing Section -->
+        <section class="landing">
 
-        <!--Floating registration btn-->
-
-
-        <!--LAnding Section-->
-        <section
-            class="scroll-item py-5 landing-section  min-vh-100  d-flex flex-column justify-content-center align-items-center landingPg">
-            <a href="./index.html">
-
-                <div class="img-holder">
-                    <img src="./Images/logo2.png" alt="logo" width="150px">
-                </div>
-
-            </a>
-            <div class="landingText text-white text-center my-5 ">
-                <h1 class="font-bold uppercase">
-                    <!-- { &nbsp; -->
-                    CodeAdept 6.0
-                    <!-- &nbsp;} -->
-                </h1>
-                <!-- <span class="fs-3 mr-3">
-                /* &nbsp;
-            </span> -->
-                <h3 class="fs-italic my-3 inline-block" id="text">
-                </h3>
-                <!-- <span class="fs-3 ml-3">
-                &nbsp; */
-            </span> -->
-
-                <h4 class="fst-italic mx-2 fs-4 tagline mt-5 mb-3">
-                    " To achieve what one desires, he needs to practise."
-                </h4>
-                <div>
-                    <p class="mx-2 fs-4 tagline my-3">
-                        CodeAdept is here again to encourage passionate programmers and boost up their confidence.
-                    </p>
-                </div>
-
-
-
-
-
-                <a href="./register.html" class="landingRegBTn">
-
-                    <button type="button" class="px-5 py-3 my-3 btn btn-outline-light fw-bold">Register Now</button>
-                </a>
-            </div>
         </section>
 
 
@@ -179,31 +149,31 @@
 
 
                 <div class="">
-                            
-                    <div class="profile-card-4 text-center card border-0"><img
-                            src="./Images/DSC_0158.JPG"
+
+                    <div class="profile-card-4 text-center card border-0"><img src="./Images/DSC_0158.JPG"
                             class="w-100">
                         <div class="profile-content">
                             <div class="profile-name">
-                                <h3 class="fw-bold">Experience</h3> 
+                                <h3 class="fw-bold">Experience</h3>
                             </div>
-                            <div class="card-text">With codeadept you get industry standard experience which will help you in
-                    performing better at your placement exams.</div>
+                            <div class="card-text">With codeadept you get industry standard experience which will help
+                                you in
+                                performing better at your placement exams.</div>
 
                         </div>
                     </div>
                 </div>
 
                 <div class="">
-                            
-                    <div class="profile-card-4 text-center card border-0"><img
-                            src="./Images/DSC_0014.JPG"
+
+                    <div class="profile-card-4 text-center card border-0"><img src="./Images/DSC_0014.JPG"
                             class="w-100">
                         <div class="profile-content">
                             <div class="profile-name">
-                                <h3 class="fw-bold">Enhance</h3> 
+                                <h3 class="fw-bold">Enhance</h3>
                             </div>
-                            <div class="card-text">CodeAdept enhances your coding skills with its time bound coding & aptitude
+                            <div class="card-text">CodeAdept enhances your coding skills with its time bound coding &
+                                aptitude
                                 rounds and helps you to prepare for your placements.
                             </div>
 
@@ -212,13 +182,11 @@
                 </div>
 
                 <div class="">
-                            
-                    <div class="profile-card-4 text-center"><img
-                            src="./Images/DSC_0186.JPG"
-                            class="w-100">
+
+                    <div class="profile-card-4 text-center"><img src="./Images/DSC_0186.JPG" class="w-100">
                         <div class="profile-content">
                             <div class="profile-name">
-                                <h3 class="fw-bold">Get Rewards</h3> 
+                                <h3 class="fw-bold">Get Rewards</h3>
                             </div>
                             <div class="card-text">We value your efforts and hardwork that is why we got prizes and
                                 certificates for our winners to keep them motivated.</div>
@@ -226,15 +194,7 @@
                         </div>
                     </div>
                 </div>
-
-                
-
-
             </div>
-
-            
-
-
         </section>
 
         <!--CountDown Section-->
@@ -249,30 +209,6 @@
                             <p class="text-white fs-1 text-center">CodeAdept 6.0 is Live Now !!
                             </p>
                         </div>
-
-                        <!-- <div id="countdown" class="d-flex justify-content-center">
-                            CodeAdept 6.0 is Live Now !!
-                        </div> -->
-
-                        <!-- <div id="countdown" class="d-flex justify-content-center">
-
-                            <div class="time d-flex flex-column align-items-center justify-content-center m-3">
-                                <h2 id="days" class="count fw-bold display-2 m-2">0</h2>
-                                <small>Days</small>
-                            </div>
-                            <div class="time d-flex flex-column align-items-center justify-content-center m-3">
-                                <h2 id="hour" class="count fw-bold display-2 m-2">0</h2>
-                                <small>Hours</small>
-                            </div>
-                            <div class="time d-flex flex-column align-items-center justify-content-center m-3">
-                                <h2 id="min" class=" count fw-bold display-2 m-2">0</h2>
-                                <small>Minutes</small>
-                            </div>
-                            <div class="time d-flex flex-column align-items-center justify-content-center m-3">
-                                <h2 id="sec" class=" count fw-bold display-2 m-2">0</h2>
-                                <small>Seconds</small>
-                            </div>
-                        </div><br> -->
                         <div class="fs-5 text-center">
                             <br>
                             <p class="para scheduledates">Codeathon: &nbsp; <span class="fw-bold ">26-29th November,
@@ -282,8 +218,6 @@
                             <p class="scheduledates">Last Date for registration: &nbsp; <span
                                     class="fw-bold scheduledates">26th November, 2022, 08:00 AM</span></p>
                         </div>
-
-
                     </div>
                 </div>
             </div>
@@ -320,97 +254,90 @@
 
         <!--Schedule-->
         <section
-            class="overflow-hidden py-5 scroll-item scheduleSection min-vh-100  d-flex flex-column justify-content-center align-items-center">
-            <div class="scheduleHeading my-5 text-center text-white">
-                <h1 class="fw-bold px-2">
-                    Schedule
-                </h1>
-                <div class="underline my-1"></div>
-
-            </div>
-            <div class="container">
-                <p class="fs-5  text-center text-white  ">
-                    CodeAdept is an initiative of the Department of Information Technology, UIT RGPV. The development of CodeAdept 6.0 will begin with two webinars, followed by three rounds of competition. 
-                </p>
-
-            </div>
-
-
-            <div class="position-relative my-5">
-                <div class="timeline text-white">
-                    <div class="line"></div>
-                    <div class="section">
-                        <div class="bead"></div>
-                        <div class="content line-height2" style="text-align: end;">
-                            <h2>Register</h2>
-                            <p>Register Yourself At CodeAdept
-                            </p>
-                            <p><i>Registration Starting From Nov 20, 2022
-                                </i></p>
-                        </div>
-                    </div>
-                    <div class="section">
-                        <div class="bead"></div>
-                        <div class="content line-height2">
-                            <h2 class="res-5 ">WEBINARS</h2>
-                            <h3 class="res-4 opacity-75">Aptitude and Reasoning</h3>
-                            <div class="date my-2" style="background-color: #2196f3;">November 20, 2022
+            class="scheduleSection overflow-hidden py-5 scroll-item  min-vh-100 d-flex flex-column justify-content-center align-items-center">
+            <div class="ag-timeline-block">
+                <section class="ag-section">
+                    <div class="ag-format-container">
+                        <div class="js-timeline ag-timeline">
+                            <div class="js-timeline_line ag-timeline_line">
+                                <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
                             </div>
-                            <p class="mt-2 res-5">Dive into the pool of Aptitude and Reasoning with us.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="section">
-                        <div class="bead"></div>
-                        <div class="content line-height2" style="text-align: end;">
-                            <h3 class="res-4 opacity-75">CODE EVOLUTION</h3>
-                            <div class="date my-2" style="background-color: #e91e63;">November 20, 2022</div>
-                            <p class="mt-2 res-5">Know how to code efficiently from the Geeks.</p>
-                        </div>
-                    </div>
+                            <div class="ag-timeline_list">
+                                <div class="js-timeline_item ag-timeline_item">
+                                    <div class="ag-timeline-card_box">
+                                        <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                            <div class="ag-timeline-card_point"></div>
+                                        </div>
+                                        <div class="ag-timeline-card_meta-box">
+                                        </div>
+                                    </div>
+                                    <div class="shedulesPoint1 ag-timeline-card_item">
+                                        <div class="ag-timeline-card_inner">
+                                            <h2>Register</h2>
+                                            <span>Register Yourself At CodeAdept</span>
+                                            <span>Registration Starting From Nov 20,2022</span>
+                                        </div>
+                                    </div>
+                                </div>
 
-                    <div class="section">
-                        <div class="bead"></div>
-                        <div class="content line-height2">
-                            <h4 class="res-5">ROUND 1 </h4>
-                            <h3 class="res-4 opacity-75">Aptitude & Reasoning</h3>
-                            <div class="date my-2" style="background-color: #23c186;"> 26th Nov 2022</div>
-                            <p class="mt-2 res-5">This round tests your apitude skills and technical knowledge having no
-                                boundations of
-                                programming language.</p>
+                                <div class="js-timeline_item ag-timeline_item">
+                                    <div class="ag-timeline-card_box">
+                                        <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                            <div class="ag-timeline-card_point"></div>
+                                        </div>
+                                        <div class="ag-timeline-card_meta-box">
+                                        </div>
+                                    </div>
+                                    <div class="shedulesPoint2 ag-timeline-card_item">
+                                        <div class="ag-timeline-card_inner">
+                                            <h2>Round 1</h2>
+                                            <h3>Aptitude & Reasoning</h3>
+                                            <button style="background-color: #00aaff;">26th Nov 2022</button>
+                                            <span>Registration Starting From Nov 20,2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="js-timeline_item ag-timeline_item">
+                                    <div class="ag-timeline-card_box">
+                                        <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                            <div class="ag-timeline-card_point"></div>
+                                        </div>
+                                        <div class="ag-timeline-card_meta-box">
+                                        </div>
+                                    </div>
+                                    <div class="shedulesPoint2 ag-timeline-card_item">
+                                        <div class="ag-timeline-card_inner">
+                                            <h2>Round 2</h2>
+                                            <h3>General Coding</h3>
+                                            <button style="background-color: rgb(49 187 49);">26th Nov 2022</button>
+                                            <span>Registration Starting From Nov 20,2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="js-timeline_item ag-timeline_item">
+                                    <div class="ag-timeline-card_box">
+                                        <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                                            <div class="ag-timeline-card_point"></div>
+                                        </div>
+                                        <div class="ag-timeline-card_meta-box">
+                                        </div>
+                                    </div>
+                                    <div class="shedulesPoint2 ag-timeline-card_item">
+                                        <div class="ag-timeline-card_inner">
+                                            <h2>Round 3</h2>
+                                            <h3>Core Coding</h3>
+                                            <button style="background-color: rgb(212 62 62)">26th Nov 2022</button>
+                                            <span>Registration Starting From Nov 20,2022</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
-
-                    <div class="section">
-                        <div class="bead"></div>
-                        <div class="content line-height2" style="text-align: end;">
-                            <h4 class="res-5">ROUND 2 </h4>
-                            <h3 class="res-4 opacity-75">General Coding</h3>
-                            
-                            <div class="date my-2" style="background-color: #2196f3;">27th Nov 2022</div>
-                            <p class="mt-2 res-5">It's the round to test your technical knowledge getting the level
-                                higher. It
-                                consists of
-                                basic debugging problems and coding quesitons.</p>
-                        </div>
-                    </div>
-
-                    <div class="section">
-                        <div class="bead"></div>
-                        <div class="content line-height2">
-                            <h4 class="res-5">ROUND 3</h4>
-                            <h3 class="res-4 opacity-75">Core Coding</h3>
-                            
-                            <div class="date my-2" style="background-color: #e91e63;"> 29th Nov 2022</div>
-                            <p class="mt-2 res-5">Its the final round, that will make you get choose your programming
-                                weapon.
-                                It
-                                consists of
-                                coding questions.</p>
-                        </div>
-                    </div>
-
-                </div>
+                </section>
             </div>
         </section>
 
@@ -486,7 +413,7 @@
 
 
                 <a href="mailto:codeadeptrgtu@gmail.com" class="me-3" target="_blank">
-                    <div class=" text-white circle  rounded-circle d-flex justify-content-center align-items-center" >
+                    <div class=" text-white circle  rounded-circle d-flex justify-content-center align-items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                             class="bi bi-envelope-fill" viewBox="0 0 16 16">
                             <path
@@ -587,7 +514,8 @@
                         <ul style="padding-left: 0px !important;">
                             <li><a href="./index.html#aboutSection">What is CodeAdept ?</a></li>
                             <li><a href="https://www.theasperteam.in" target="_blank">Asper</a></li>
-                            <li><a href="https://www.uitrgpv.ac.in/departments/department_home.aspx" target="_blank">DoIT</a></li>
+                            <li><a href="https://www.uitrgpv.ac.in/departments/department_home.aspx"
+                                    target="_blank">DoIT</a></li>
                         </ul>
                     </div>
                 </div>
@@ -598,7 +526,7 @@
                         <!-- <span><a href="#"><i class="fa-brands fa-facebook-f"></i>facebook</a></span> -->
                         <!-- <span><a href="#"><i class="fa-brands fa-twitter"></i>twitter</a></span> -->
                         <span><a href="https://www.linkedin.com/showcase/codeadept/" target="_blank"><i
-                                    class="fa-brands fa-linkedin-in" ></i>LinkedIn</a></span>
+                                    class="fa-brands fa-linkedin-in"></i>LinkedIn</a></span>
                         <span><a href="https://www.instagram.com/codeadept/" target="_blank"><i
                                     class="fa-brands fa-instagram"></i>Instagram</a></span>
                     </div>
@@ -615,7 +543,6 @@
         <!-- <div class="mouse_trailer"></div> -->
 
     </main>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
@@ -635,14 +562,5 @@
 
     </script>
 </body>
-
-<!-- <script>
-    function preloader() {
-      // setTimeout(() => {
-      let loader_container = document.getElementById("loader_container");
-      loader_container.style.display = "none";
-      // }, 2000);
-    }
-  </script> -->
 
 </html>
